@@ -7,21 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E074343982C57A68CFCD50E /* Pods_InthegameTVExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ACDB3F93F73C8584D364C3 /* Pods_InthegameTVExample.framework */; };
 		6D85B1E725E6BC4D00C248DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B1E625E6BC4D00C248DB /* AppDelegate.swift */; };
-		6D85B1E925E6BC4D00C248DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B1E825E6BC4D00C248DB /* ViewController.swift */; };
 		6D85B1EC25E6BC4D00C248DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D85B1EA25E6BC4D00C248DB /* Main.storyboard */; };
 		6D85B1EE25E6BC4F00C248DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D85B1ED25E6BC4F00C248DB /* Assets.xcassets */; };
 		6D85B1F125E6BC4F00C248DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D85B1EF25E6BC4F00C248DB /* LaunchScreen.storyboard */; };
+		6D85B1FB25E6BCFC00C248DB /* Inthegametv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D85B1F925E6BC7800C248DB /* Inthegametv.framework */; };
+		6D85B1FC25E6BCFC00C248DB /* Inthegametv.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D85B1F925E6BC7800C248DB /* Inthegametv.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D85B20225E6BD9B00C248DB /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B1FE25E6BD9B00C248DB /* AVPlayerView.swift */; };
+		6D85B20325E6BD9B00C248DB /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B1FF25E6BD9B00C248DB /* ControlsView.swift */; };
+		6D85B20425E6BD9B00C248DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B20025E6BD9B00C248DB /* HomeViewController.swift */; };
+		6D85B20525E6BD9B00C248DB /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B20125E6BD9B00C248DB /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6D85B1FD25E6BCFC00C248DB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6D85B1FC25E6BCFC00C248DB /* Inthegametv.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		51F3424AC2E8C0663C8AB370 /* Pods-InthegameTVExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InthegameTVExample.release.xcconfig"; path = "Target Support Files/Pods-InthegameTVExample/Pods-InthegameTVExample.release.xcconfig"; sourceTree = "<group>"; };
 		6D85B1E325E6BC4D00C248DB /* InthegameTVExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InthegameTVExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D85B1E625E6BC4D00C248DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6D85B1E825E6BC4D00C248DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6D85B1EB25E6BC4D00C248DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D85B1ED25E6BC4F00C248DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D85B1F025E6BC4F00C248DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D85B1F225E6BC4F00C248DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D85B1F925E6BC7800C248DB /* Inthegametv.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Inthegametv.framework; sourceTree = "<group>"; };
+		6D85B1FE25E6BD9B00C248DB /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		6D85B1FF25E6BD9B00C248DB /* ControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		6D85B20025E6BD9B00C248DB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6D85B20125E6BD9B00C248DB /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		9276D0C62A623A752CE5B2C5 /* Pods-InthegameTVExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InthegameTVExample.debug.xcconfig"; path = "Target Support Files/Pods-InthegameTVExample/Pods-InthegameTVExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A1ACDB3F93F73C8584D364C3 /* Pods_InthegameTVExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InthegameTVExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +56,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D85B1FB25E6BCFC00C248DB /* Inthegametv.framework in Frameworks */,
+				5E074343982C57A68CFCD50E /* Pods_InthegameTVExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51312D597F36FC75605AD1E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1ACDB3F93F73C8584D364C3 /* Pods_InthegameTVExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6D85B1DA25E6BC4D00C248DB = {
 			isa = PBXGroup;
 			children = (
 				6D85B1E525E6BC4D00C248DB /* InthegameTVExample */,
 				6D85B1E425E6BC4D00C248DB /* Products */,
+				C963F6182A4CAF75FA6A7262 /* Pods */,
+				51312D597F36FC75605AD1E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +94,27 @@
 			isa = PBXGroup;
 			children = (
 				6D85B1E625E6BC4D00C248DB /* AppDelegate.swift */,
-				6D85B1E825E6BC4D00C248DB /* ViewController.swift */,
+				6D85B1FE25E6BD9B00C248DB /* AVPlayerView.swift */,
+				6D85B1FF25E6BD9B00C248DB /* ControlsView.swift */,
+				6D85B20025E6BD9B00C248DB /* HomeViewController.swift */,
+				6D85B20125E6BD9B00C248DB /* PlayerViewController.swift */,
 				6D85B1EA25E6BC4D00C248DB /* Main.storyboard */,
 				6D85B1ED25E6BC4F00C248DB /* Assets.xcassets */,
 				6D85B1EF25E6BC4F00C248DB /* LaunchScreen.storyboard */,
 				6D85B1F225E6BC4F00C248DB /* Info.plist */,
+				6D85B1F925E6BC7800C248DB /* Inthegametv.framework */,
 			);
 			path = InthegameTVExample;
+			sourceTree = "<group>";
+		};
+		C963F6182A4CAF75FA6A7262 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9276D0C62A623A752CE5B2C5 /* Pods-InthegameTVExample.debug.xcconfig */,
+				51F3424AC2E8C0663C8AB370 /* Pods-InthegameTVExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +124,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D85B1F525E6BC4F00C248DB /* Build configuration list for PBXNativeTarget "InthegameTVExample" */;
 			buildPhases = (
+				0F3343461B130351FB7F6704 /* [CP] Check Pods Manifest.lock */,
 				6D85B1DF25E6BC4D00C248DB /* Sources */,
 				6D85B1E025E6BC4D00C248DB /* Frameworks */,
 				6D85B1E125E6BC4D00C248DB /* Resources */,
+				6D85B1FD25E6BCFC00C248DB /* Embed Frameworks */,
+				3A21DECA77E93FEB8511D38A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,13 +185,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F3343461B130351FB7F6704 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InthegameTVExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A21DECA77E93FEB8511D38A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InthegameTVExample/Pods-InthegameTVExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InthegameTVExample/Pods-InthegameTVExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InthegameTVExample/Pods-InthegameTVExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D85B1DF25E6BC4D00C248DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D85B1E925E6BC4D00C248DB /* ViewController.swift in Sources */,
+				6D85B20425E6BD9B00C248DB /* HomeViewController.swift in Sources */,
+				6D85B20325E6BD9B00C248DB /* ControlsView.swift in Sources */,
+				6D85B20225E6BD9B00C248DB /* AVPlayerView.swift in Sources */,
 				6D85B1E725E6BC4D00C248DB /* AppDelegate.swift in Sources */,
+				6D85B20525E6BD9B00C248DB /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,30 +380,45 @@
 		};
 		6D85B1F625E6BC4F00C248DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9276D0C62A623A752CE5B2C5 /* Pods-InthegameTVExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KKS6W5LF2;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=appletvsimulator*]" = "arm64 arm64-apple-tvos";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InthegameTVExample",
+				);
 				INFOPLIST_FILE = InthegameTVExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syncedapps.InthegameTVExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Debug;
 		};
 		6D85B1F725E6BC4F00C248DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51F3424AC2E8C0663C8AB370 /* Pods-InthegameTVExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6KKS6W5LF2;
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InthegameTVExample",
+				);
 				INFOPLIST_FILE = InthegameTVExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,6 +428,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Release;
 		};

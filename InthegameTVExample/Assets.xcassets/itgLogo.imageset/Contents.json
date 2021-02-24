@@ -1,8 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "logo_wide (3).png",
-      "idiom" : "tv"
+      "filename" : "logo_wide.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {

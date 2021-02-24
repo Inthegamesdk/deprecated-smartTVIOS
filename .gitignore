@@ -17,3 +17,4 @@ profile
 *.ipa
 DerivedData
 .idea/
+Pods/
