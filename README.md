@@ -1,7 +1,8 @@
 # Inthegame SmartTV - Apple TV SDK
 
 This SDK allows you to easily integrate the In The Game engagement platform in a Smart TV app. It is compatible with Apple tvOS devices.\
-The repository includes an example app that shows how to use the framework.
+The repository includes an example app that shows how to use the framework.\
+The example uses CocoaPods, so you'll need to run `pod install` and open the workspace file to run it.
 
 
 ## Installation
