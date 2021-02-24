@@ -10,15 +10,20 @@ To install, drag **Inthegametv.framework** into your project.
 
 Configure the framework as Embedded on your project target settings:
 
+![](https://imgur.com/J55NVJn.jpg)
+
 
 And import the SDK in your code:
 
 `import Inthegametv`
 
 The framework requires the Socket.IO-Client library. If you are using CocoaPods, add this line to your podfile:
+
 `pod 'Socket.IO-Client-Swift', '~> 15.2.0'`
 
-If the framework fails to run in the simulator, you'll need to exclude arm64 architectures:
+If the framework fails to run in the simulator, you'll need to exclude arm64 architectures in your project's build settings:
+
+![](https://imgur.com/qNRmq1D.jpg)
 
 
 ## Usage
