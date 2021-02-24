@@ -62,11 +62,11 @@ let usedEvent = overlayView?.closeInteractionIfNeeded() ?? false
 
 Some interactive content requires a pause in the video. To use this feature, override the ITGOverlayDelegate methods to detect when it requests these events.
 ```
-fun overlayRequestedPause()
-fun overlayRequestedPlay()
+func overlayRequestedPause()
+func overlayRequestedPlay()
 ```
 
-The overlay will request focus when showing content, so that the user can interact with the buttons. Use these delegate method to set the preferredFocusView of your controller accordingly.\
+The overlay will request focus when showing content, so that the user can interact with the buttons. Use these delegate methods to set the preferredFocusView of your controller accordingly.\
 The example app includes a basic setup of the focus transfer.
 ```
 func overlayRequestedFocus()
