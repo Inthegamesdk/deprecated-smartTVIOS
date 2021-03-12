@@ -17,12 +17,12 @@ let channelID = "ORLvsNYCFC"
 class PlayerViewController: UIViewController {
 
     @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var controlsView: ControlsView!
     
     public var overlayView: ITGOverlayView?
-    var playerLayer: AVPlayerLayer?
-    var playerView: AVPlayerView?
-    var timeObserverToken: Any?
+    
+    var playerController: AVPlayerViewController?
+    var player: AVPlayer?
+    var seekTimer: Timer?
 
     weak var customPreferredFocusView: UIView?
     
@@ -31,19 +31,37 @@ class PlayerViewController: UIViewController {
         startVideo()
         setupOverlay()
         configureMenuButtonHandler()
+        configureDownButtonHandler()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        if isMovingFromParent {
-            if let timeObserverToken = timeObserverToken {
-                playerLayer?.player?.removeTimeObserver(timeObserverToken)
-                self.timeObserverToken = nil
-            }
+    func startVideo() {
+        let asset = AVAsset(url: URL(string: videoURL)!)
+        let item = AVPlayerItem(asset: asset)
+        let player = AVPlayer(playerItem: item)
+        
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        playerViewController.showsPlaybackControls = true
+        playerViewController.playbackControlsIncludeInfoViews = false
+        playerViewController.videoGravity = .resizeAspect
+        self.playerController = playerViewController
+        if let view = playerViewController.view {
+            view.frame = self.view.bounds
+            view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            view.translatesAutoresizingMaskIntoConstraints = true
+            self.addChild(playerViewController)
+            self.containerView.addSubview(view)
         }
+        self.player = player
+        
+        player.play()
+        startVideoObservers()
+        
+        customPreferredFocusView = playerController?.view
+        view.setNeedsFocusUpdate()
+        view.updateFocusIfNeeded()
     }
     
-    //basic setup of the inthegame overlay view
     func setupOverlay() {
         let overlay = ITGOverlayView(frame: view.bounds)
         overlay.translatesAutoresizingMaskIntoConstraints = true
@@ -54,6 +72,7 @@ class PlayerViewController: UIViewController {
         overlayView = overlay
     }
     
+    //this handler allows the overlay to use the menu button click to remove the current interaction
     func configureMenuButtonHandler() {
         let menuPressRecognizer = UITapGestureRecognizer()
         menuPressRecognizer.addTarget(self, action: #selector(menuButtonAction(recognizer:)))
@@ -62,89 +81,74 @@ class PlayerViewController: UIViewController {
     }
         
     @objc func menuButtonAction(recognizer:UITapGestureRecognizer) {
-        //passing the menu button event to the overlay
-        //overlay returns true if it uses the event to close the current interaction
-        //if it returns false, you should use the event
         let interactionClosed = overlayView?.closeInteractionIfNeeded() ?? false
+        //if the overlay doesn't use the event, we can use it in the app
         if !interactionClosed {
-            dismiss(animated: true, completion: nil)
+            dismiss(animated: true) {
+                self.removePlayer()
+            }
         }
     }
     
-    func startVideo() {
-        playerLayer?.player?.removeObserver(self, forKeyPath: "timeControlStatus")
-        playerLayer?.player = nil
-        playerLayer?.removeFromSuperlayer()
+    //this handler moves the focus to the overlay content when the user presses the "down" key
+    //this step is optional - it is useful in this example because the AVPlayerController controls override the "up" key
+    func configureDownButtonHandler() {
+        let menuPressRecognizer = UITapGestureRecognizer()
+        menuPressRecognizer.addTarget(self, action: #selector(downButtonAction(recognizer:)))
+        menuPressRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.downArrow.rawValue)]
+        view.addGestureRecognizer(menuPressRecognizer)
+    }
         
-        let asset = AVAsset(url: URL(string: videoURL)!)
-        let item = AVPlayerItem(asset: asset)
-        let player = AVPlayer(playerItem: item)
-        let view = AVPlayerView(frame: self.view.bounds)
-        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.translatesAutoresizingMaskIntoConstraints = true
-        view.player = player
-        view.playerLayer.frame = view.bounds
-
-        playerView = view
-        
-        view.playerLayer.videoGravity = .resizeAspect
-        view.playerLayer.needsDisplayOnBoundsChange = true
-        playerLayer = view.playerLayer
-        containerView.addSubview(view)
-        
-        player.play()
-        controlsView.setVideoTime(0, duration: nil)
-        
-        let timeScale = CMTimeScale(NSEC_PER_SEC)
-        let time = CMTime(seconds: 0.5, preferredTimescale: timeScale)
-        
-        timeObserverToken = player.addPeriodicTimeObserver(forInterval: time,
-                                                           queue: .main) { [weak self] time in
-            let duration = self?.playerLayer?.player?.currentItem?.duration.seconds
-            self?.controlsView.setVideoTime(time.seconds, duration: duration)
+    @objc func downButtonAction(recognizer:UITapGestureRecognizer) {
+        let hasInteraction = overlayView?.isDisplayingInteraction() == true
+        if hasInteraction {
+            customPreferredFocusView = overlayView
+            view.setNeedsFocusUpdate()
+            view.updateFocusIfNeeded()
         }
     }
     
-    @IBAction func actionPlayButton(_ sender: Any) {
-        guard let player = self.playerLayer?.player else { return }
-        if (player.rate != 0) {
-            pause()
-        } else if (player.currentItem?.status == .readyToPlay) {
-            play()
-        }
-    }
-    
-    func play() {
-        guard let player = self.playerLayer?.player else { return }
-        player.play()
-        controlsView.playButton.setImage(UIImage(named: "pause"), for: .normal)
-        let time = player.currentTime().seconds
-        
-        //notify the overlay of the current playing time
-        overlayView?.videoPlaying(time: time)
-    }
-    
-    func pause() {
-        guard let player = self.playerLayer?.player else { return }
-        player.pause()
-        controlsView.playButton?.setImage(UIImage(named: "play"), for: .normal)
-        
-        //notify the overlay that the video is paused
-        overlayView?.videoPaused()
+    func removePlayer() {
+        player?.pause()
+        playerController?.view.removeFromSuperview()
+        playerController?.removeFromParent()
+        playerController = nil
+        player = nil
     }
     
     override var preferredFocusedView: UIView? {
         return customPreferredFocusView
     }
+    
+    func startVideoObservers() {
+        guard let player = player, let item = player.currentItem else { return }
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemTimeJumped, object: item, queue: OperationQueue.main) { (notification) in
+            if player.timeControlStatus != .playing {
+                self.overlayView?.videoPaused()
+//                print("VIDEO STATE: PAUSED")
+            } else {
+                self.seekTimer?.invalidate()
+                self.seekTimer = Timer.scheduledTimer(withTimeInterval: 0.4, repeats: false, block: { (timer) in
+                    self.seekTimer = nil
+                    if player.timeControlStatus == .playing {
+                        let time = player.currentTime().seconds
+                        self.overlayView?.videoPlaying(time: time)
+//                        print("VIDEO STATE: PLAYING \(time)")
+                    }
+                })
+            }
+        }
+    }
 }
 
 extension PlayerViewController: ITGOverlayDelegate {
     func overlayRequestedPause() {
-        pause()
+        player?.pause()
     }
     
     func overlayRequestedPlay() {
-        play()
+        player?.play()
     }
     
     func overlayRequestedFocus() {
@@ -158,6 +162,8 @@ extension PlayerViewController: ITGOverlayDelegate {
     func overlayReleasedFocus() {
         //overlay finished an interaction
         //you can move focus to one of your views if needed
-        //(in most cases it should update automatically)
+        customPreferredFocusView = playerController?.view
+        view.setNeedsFocusUpdate()
+        view.updateFocusIfNeeded()
     }
 }

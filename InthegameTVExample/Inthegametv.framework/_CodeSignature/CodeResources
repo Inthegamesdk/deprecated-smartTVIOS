@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pKa0rYPrUSSHvg/aOASzezPzEvs=
+		VCfWi97ppsskv/3GdoIYi06x3Xk=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		R2At57Pewl9N7NAZk2fgetmkuxE=
+		WLPc5KUoJQ3AwbIYl2wVKc46WeQ=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		R2At57Pewl9N7NAZk2fgetmkuxE=
+		WLPc5KUoJQ3AwbIYl2wVKc46WeQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,27 +42,27 @@
 		</data>
 		<key>PollAnswerView.nib</key>
 		<data>
-		NYiuwOWfqJSE32uGcWbTHNKBd6w=
+		FQBUgIqKgFnP3W5wFEodtY30IeM=
 		</data>
 		<key>PollView.nib</key>
 		<data>
-		3vwedQvAlmyTkkKsHjzaYKwUz9s=
+		CrFrAFIIg0UFRa57F9ikVabURww=
 		</data>
 		<key>RatingAnswerView.nib</key>
 		<data>
-		lRakWLYyIILtPpKhwORhSbQtRI8=
+		GtmmJ3U7pEDo2cSPaTiXg0289kI=
 		</data>
 		<key>RatingView.nib</key>
 		<data>
-		u64BKHHfavlC2vmAFnijKD/tr9A=
+		eShvETY3aTbmfnXZcTgsFMeDnDc=
 		</data>
 		<key>TriviaAnswerView.nib</key>
 		<data>
-		d5ouTpqGMKM5ZoqWP/jnchBktdY=
+		65mfOWXwfVz1mZRVg+Q7pFTdAUs=
 		</data>
 		<key>TriviaView.nib</key>
 		<data>
-		dwRHrOx2+0uKvAhMp4u+OxQlHww=
+		u18F7aIGdrL5HcVlu8lNq85hQTo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -99,7 +99,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			56HBBBttx8+IndCiiQjhJETiEjEOqBNorl5QCGd2JiQ=
+			0bINOUgk0vSGkFp2+c/gRrysZEgIhYkI6asbDd0XqPY=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftdoc</key>
@@ -113,7 +113,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			56HBBBttx8+IndCiiQjhJETiEjEOqBNorl5QCGd2JiQ=
+			0bINOUgk0vSGkFp2+c/gRrysZEgIhYkI6asbDd0XqPY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -127,42 +127,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nOQc7hlFxR/DnEKOuU5jG63haVG+98TUnSVQhkLt7K0=
+			b69StODtHZpkTtVKX/TVi3OugrTVDsb5O93d77xABVQ=
 			</data>
 		</dict>
 		<key>PollView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ejDv/HrjWGdcAMZBWDMmTJ87h5FAEKhVWxC9HVnDd4o=
+			bjvGqqX4F44+wh8iIetIlQCW/USKewD5KZkI0Z7ZehA=
 			</data>
 		</dict>
 		<key>RatingAnswerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vRSHWdSgCVR+tVAySMGOJaUfadOt4fcWJGDCmxeHeSs=
+			tKpXGrmU54+LlBYMIslH+ikigoF2qHGIHnbOIrGyo3g=
 			</data>
 		</dict>
 		<key>RatingView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5o/FGo0LoD95BAWQFj3LxPBOZgr9s1897mEeHleXBPc=
+			2j/LPYf2BZa9yfjYZL4GbkH59ognKECOjUqrQRgxtmA=
 			</data>
 		</dict>
 		<key>TriviaAnswerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G3x55MeQ7csmmTEMB51YHIM4rVit2aRKr4i8GmWZ5hE=
+			UxvKHs86k/0ohbEccLv5DiogjAmpGEQH5A1zOoWzPAY=
 			</data>
 		</dict>
 		<key>TriviaView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8DRRhFHRqX1ftRNF1izSDOUCvQPq3huWeyPgMKay21s=
+			Hq5n14EVtIjIAxtk8T8kXevaqivtix/tw0WfX7rvqvQ=
 			</data>
 		</dict>
 	</dict>
