@@ -69,6 +69,8 @@ func overlayRequestedFocus()
 func overlayReleasedFocus()
 ```
 
+## Optional Customization
+
 You can also adjust the bottom margin for the content, and the type of animation:
 ```
 overlay.bottomMargin = 0
