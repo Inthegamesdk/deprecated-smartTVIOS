@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,12 +12,24 @@
 		6D85B1EC25E6BC4D00C248DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D85B1EA25E6BC4D00C248DB /* Main.storyboard */; };
 		6D85B1EE25E6BC4F00C248DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D85B1ED25E6BC4F00C248DB /* Assets.xcassets */; };
 		6D85B1F125E6BC4F00C248DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D85B1EF25E6BC4F00C248DB /* LaunchScreen.storyboard */; };
-		6D85B1FB25E6BCFC00C248DB /* Inthegametv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D85B1F925E6BC7800C248DB /* Inthegametv.framework */; };
-		6D85B1FC25E6BCFC00C248DB /* Inthegametv.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D85B1F925E6BC7800C248DB /* Inthegametv.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6D85B20225E6BD9B00C248DB /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B1FE25E6BD9B00C248DB /* AVPlayerView.swift */; };
 		6D85B20325E6BD9B00C248DB /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B1FF25E6BD9B00C248DB /* ControlsView.swift */; };
 		6D85B20425E6BD9B00C248DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B20025E6BD9B00C248DB /* HomeViewController.swift */; };
 		6D85B20525E6BD9B00C248DB /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B20125E6BD9B00C248DB /* PlayerViewController.swift */; };
+		6DE93FC92604C567005AB3A9 /* Inthegametv.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE93FC72604C562005AB3A9 /* Inthegametv.xcframework */; };
+		6DE93FCA2604C567005AB3A9 /* Inthegametv.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE93FC72604C562005AB3A9 /* Inthegametv.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DE93FD82604CB1C005AB3A9 /* CustomTriviaAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93FCC2604CB1C005AB3A9 /* CustomTriviaAnswerView.xib */; };
+		6DE93FD92604CB1C005AB3A9 /* CustomPollAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93FCD2604CB1C005AB3A9 /* CustomPollAnswerView.swift */; };
+		6DE93FDA2604CB1C005AB3A9 /* CustomRatingAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93FCE2604CB1C005AB3A9 /* CustomRatingAnswerView.xib */; };
+		6DE93FDB2604CB1C005AB3A9 /* CustomPollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93FCF2604CB1C005AB3A9 /* CustomPollView.swift */; };
+		6DE93FDC2604CB1C005AB3A9 /* CustomRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93FD02604CB1C005AB3A9 /* CustomRatingView.swift */; };
+		6DE93FDD2604CB1C005AB3A9 /* CustomRatingAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93FD12604CB1C005AB3A9 /* CustomRatingAnswerView.swift */; };
+		6DE93FDE2604CB1C005AB3A9 /* CustomTriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93FD22604CB1C005AB3A9 /* CustomTriviaView.swift */; };
+		6DE93FDF2604CB1C005AB3A9 /* CustomPollAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93FD32604CB1C005AB3A9 /* CustomPollAnswerView.xib */; };
+		6DE93FE02604CB1C005AB3A9 /* CustomTriviaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93FD42604CB1C005AB3A9 /* CustomTriviaView.xib */; };
+		6DE93FE12604CB1C005AB3A9 /* CustomTriviaAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93FD52604CB1C005AB3A9 /* CustomTriviaAnswerView.swift */; };
+		6DE93FE22604CB1C005AB3A9 /* CustomPollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93FD62604CB1C005AB3A9 /* CustomPollView.xib */; };
+		6DE93FE32604CB1C005AB3A9 /* CustomRatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93FD72604CB1C005AB3A9 /* CustomRatingView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6D85B1FC25E6BCFC00C248DB /* Inthegametv.framework in Embed Frameworks */,
+				6DE93FCA2604C567005AB3A9 /* Inthegametv.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,11 +54,23 @@
 		6D85B1ED25E6BC4F00C248DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D85B1F025E6BC4F00C248DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D85B1F225E6BC4F00C248DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D85B1F925E6BC7800C248DB /* Inthegametv.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Inthegametv.framework; sourceTree = "<group>"; };
 		6D85B1FE25E6BD9B00C248DB /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
 		6D85B1FF25E6BD9B00C248DB /* ControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 		6D85B20025E6BD9B00C248DB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6D85B20125E6BD9B00C248DB /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		6DE93FC72604C562005AB3A9 /* Inthegametv.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Inthegametv.xcframework; sourceTree = "<group>"; };
+		6DE93FCC2604CB1C005AB3A9 /* CustomTriviaAnswerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTriviaAnswerView.xib; sourceTree = "<group>"; };
+		6DE93FCD2604CB1C005AB3A9 /* CustomPollAnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPollAnswerView.swift; sourceTree = "<group>"; };
+		6DE93FCE2604CB1C005AB3A9 /* CustomRatingAnswerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRatingAnswerView.xib; sourceTree = "<group>"; };
+		6DE93FCF2604CB1C005AB3A9 /* CustomPollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPollView.swift; sourceTree = "<group>"; };
+		6DE93FD02604CB1C005AB3A9 /* CustomRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRatingView.swift; sourceTree = "<group>"; };
+		6DE93FD12604CB1C005AB3A9 /* CustomRatingAnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRatingAnswerView.swift; sourceTree = "<group>"; };
+		6DE93FD22604CB1C005AB3A9 /* CustomTriviaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTriviaView.swift; sourceTree = "<group>"; };
+		6DE93FD32604CB1C005AB3A9 /* CustomPollAnswerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPollAnswerView.xib; sourceTree = "<group>"; };
+		6DE93FD42604CB1C005AB3A9 /* CustomTriviaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTriviaView.xib; sourceTree = "<group>"; };
+		6DE93FD52604CB1C005AB3A9 /* CustomTriviaAnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTriviaAnswerView.swift; sourceTree = "<group>"; };
+		6DE93FD62604CB1C005AB3A9 /* CustomPollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPollView.xib; sourceTree = "<group>"; };
+		6DE93FD72604CB1C005AB3A9 /* CustomRatingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRatingView.xib; sourceTree = "<group>"; };
 		9276D0C62A623A752CE5B2C5 /* Pods-InthegameTVExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InthegameTVExample.debug.xcconfig"; path = "Target Support Files/Pods-InthegameTVExample/Pods-InthegameTVExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A1ACDB3F93F73C8584D364C3 /* Pods_InthegameTVExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InthegameTVExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -56,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D85B1FB25E6BCFC00C248DB /* Inthegametv.framework in Frameworks */,
+				6DE93FC92604C567005AB3A9 /* Inthegametv.xcframework in Frameworks */,
 				5E074343982C57A68CFCD50E /* Pods_InthegameTVExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,13 +122,33 @@
 				6D85B1FF25E6BD9B00C248DB /* ControlsView.swift */,
 				6D85B20025E6BD9B00C248DB /* HomeViewController.swift */,
 				6D85B20125E6BD9B00C248DB /* PlayerViewController.swift */,
+				6DE93FCB2604CB1C005AB3A9 /* Custom Views */,
 				6D85B1EA25E6BC4D00C248DB /* Main.storyboard */,
 				6D85B1ED25E6BC4F00C248DB /* Assets.xcassets */,
 				6D85B1EF25E6BC4F00C248DB /* LaunchScreen.storyboard */,
 				6D85B1F225E6BC4F00C248DB /* Info.plist */,
-				6D85B1F925E6BC7800C248DB /* Inthegametv.framework */,
+				6DE93FC72604C562005AB3A9 /* Inthegametv.xcframework */,
 			);
 			path = InthegameTVExample;
+			sourceTree = "<group>";
+		};
+		6DE93FCB2604CB1C005AB3A9 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DE93FCF2604CB1C005AB3A9 /* CustomPollView.swift */,
+				6DE93FD62604CB1C005AB3A9 /* CustomPollView.xib */,
+				6DE93FCD2604CB1C005AB3A9 /* CustomPollAnswerView.swift */,
+				6DE93FD32604CB1C005AB3A9 /* CustomPollAnswerView.xib */,
+				6DE93FD02604CB1C005AB3A9 /* CustomRatingView.swift */,
+				6DE93FD72604CB1C005AB3A9 /* CustomRatingView.xib */,
+				6DE93FD12604CB1C005AB3A9 /* CustomRatingAnswerView.swift */,
+				6DE93FCE2604CB1C005AB3A9 /* CustomRatingAnswerView.xib */,
+				6DE93FD22604CB1C005AB3A9 /* CustomTriviaView.swift */,
+				6DE93FD42604CB1C005AB3A9 /* CustomTriviaView.xib */,
+				6DE93FD52604CB1C005AB3A9 /* CustomTriviaAnswerView.swift */,
+				6DE93FCC2604CB1C005AB3A9 /* CustomTriviaAnswerView.xib */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		C963F6182A4CAF75FA6A7262 /* Pods */ = {
@@ -113,7 +157,6 @@
 				9276D0C62A623A752CE5B2C5 /* Pods-InthegameTVExample.debug.xcconfig */,
 				51F3424AC2E8C0663C8AB370 /* Pods-InthegameTVExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -177,9 +220,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE93FE22604CB1C005AB3A9 /* CustomPollView.xib in Resources */,
+				6DE93FD82604CB1C005AB3A9 /* CustomTriviaAnswerView.xib in Resources */,
+				6DE93FDA2604CB1C005AB3A9 /* CustomRatingAnswerView.xib in Resources */,
 				6D85B1F125E6BC4F00C248DB /* LaunchScreen.storyboard in Resources */,
+				6DE93FE02604CB1C005AB3A9 /* CustomTriviaView.xib in Resources */,
 				6D85B1EE25E6BC4F00C248DB /* Assets.xcassets in Resources */,
+				6DE93FDF2604CB1C005AB3A9 /* CustomPollAnswerView.xib in Resources */,
 				6D85B1EC25E6BC4D00C248DB /* Main.storyboard in Resources */,
+				6DE93FE32604CB1C005AB3A9 /* CustomRatingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +282,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D85B20425E6BD9B00C248DB /* HomeViewController.swift in Sources */,
+				6DE93FDD2604CB1C005AB3A9 /* CustomRatingAnswerView.swift in Sources */,
 				6D85B20325E6BD9B00C248DB /* ControlsView.swift in Sources */,
+				6DE93FD92604CB1C005AB3A9 /* CustomPollAnswerView.swift in Sources */,
+				6DE93FDB2604CB1C005AB3A9 /* CustomPollView.swift in Sources */,
+				6DE93FDC2604CB1C005AB3A9 /* CustomRatingView.swift in Sources */,
+				6DE93FE12604CB1C005AB3A9 /* CustomTriviaAnswerView.swift in Sources */,
+				6DE93FDE2604CB1C005AB3A9 /* CustomTriviaView.swift in Sources */,
 				6D85B20225E6BD9B00C248DB /* AVPlayerView.swift in Sources */,
 				6D85B1E725E6BC4D00C248DB /* AppDelegate.swift in Sources */,
 				6D85B20525E6BD9B00C248DB /* PlayerViewController.swift in Sources */,

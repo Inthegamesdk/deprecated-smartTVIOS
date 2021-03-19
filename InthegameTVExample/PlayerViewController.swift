@@ -63,13 +63,24 @@ class PlayerViewController: UIViewController {
     }
     
     func setupOverlay() {
+        //create the overlay and add it to your view hierarchy
         let overlay = ITGOverlayView(frame: view.bounds)
         overlay.translatesAutoresizingMaskIntoConstraints = true
         overlay.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         containerView.addSubview(overlay)
         
+        //load your channel to start up the ITG system
         overlay.load(channelID: channelID, broadcasterName: broadcaster, delegate: self)
         overlayView = overlay
+        
+        // enable the layout delegate if you wish to set custom layouts
+//        overlay.layoutDelegate = self
+        
+        // you can adjust the spacing between the content and bottom of the screen
+//        overlay.bottomMargin = 0
+        
+        // use this variable to set the animation type
+//        overlay.animationType = .fromBottom
     }
     
     //this handler allows the overlay to use the menu button click to remove the current interaction
@@ -126,7 +137,6 @@ class PlayerViewController: UIViewController {
         NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemTimeJumped, object: item, queue: OperationQueue.main) { (notification) in
             if player.timeControlStatus != .playing {
                 self.overlayView?.videoPaused()
-//                print("VIDEO STATE: PAUSED")
             } else {
                 self.seekTimer?.invalidate()
                 self.seekTimer = Timer.scheduledTimer(withTimeInterval: 0.4, repeats: false, block: { (timer) in
@@ -134,7 +144,6 @@ class PlayerViewController: UIViewController {
                     if player.timeControlStatus == .playing {
                         let time = player.currentTime().seconds
                         self.overlayView?.videoPlaying(time: time)
-//                        print("VIDEO STATE: PLAYING \(time)")
                     }
                 })
             }
@@ -165,5 +174,20 @@ extension PlayerViewController: ITGOverlayDelegate {
         customPreferredFocusView = playerController?.view
         view.setNeedsFocusUpdate()
         view.updateFocusIfNeeded()
+    }
+}
+
+//this delegate is optional, use it only if you want to customize the design elements
+extension PlayerViewController: ITGLayoutDelegate {
+    func customPollView() -> PollView? {
+        return CustomPollView.fromNib()
+    }
+    
+    func customRatingView() -> RatingView? {
+        return CustomRatingView.fromNib()
+    }
+    
+    func customTriviaView() -> TriviaView? {
+        return CustomTriviaView.fromNib()
     }
 }
