@@ -8,9 +8,9 @@
 import UIKit
 import Inthegametv
 
-class CustomPollView: PollView {
+class CustomPollView: ITGPollView {
 
-    override func createAnswerView() -> PollAnswerView {
+    override func createAnswerView() -> ITGPollAnswerView {
         return CustomPollAnswerView.fromNib()
     }
 

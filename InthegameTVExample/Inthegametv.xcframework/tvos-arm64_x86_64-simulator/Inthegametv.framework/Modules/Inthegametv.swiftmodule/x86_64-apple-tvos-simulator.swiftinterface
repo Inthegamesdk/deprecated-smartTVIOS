@@ -14,9 +14,9 @@ public protocol ITGOverlayDelegate : AnyObject {
   func overlayReleasedFocus()
 }
 public protocol ITGLayoutDelegate : AnyObject {
-  func customPollView() -> Inthegametv.PollView?
-  func customRatingView() -> Inthegametv.RatingView?
-  func customTriviaView() -> Inthegametv.TriviaView?
+  func customPollView() -> Inthegametv.ITGPollView?
+  func customRatingView() -> Inthegametv.ITGRatingView?
+  func customTriviaView() -> Inthegametv.ITGTriviaView?
 }
 public enum ITGAnimationType {
   case fromRight
@@ -43,13 +43,13 @@ public enum ITGAnimationType {
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers open class TriviaView : Inthegametv.InteractionView, Inthegametv.NibView {
-  open func createAnswerView() -> Inthegametv.TriviaAnswerView
+@objc @_inheritsConvenienceInitializers open class ITGTriviaView : Inthegametv.ITGInteractionView, Inthegametv.NibView {
+  open func createAnswerView() -> Inthegametv.ITGTriviaAnswerView
   @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers open class PollAnswerView : UIKit.UIView, Inthegametv.NibView {
+@objc @_inheritsConvenienceInitializers open class ITGPollAnswerView : UIKit.UIView, Inthegametv.NibView {
   @objc @IBOutlet weak public var button: UIKit.UIButton!
   @objc @IBOutlet weak public var statsLabel: UIKit.UILabel!
   @objc override dynamic public func awakeFromNib()
@@ -59,23 +59,23 @@ public enum ITGAnimationType {
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers open class RatingView : Inthegametv.InteractionView, Inthegametv.NibView {
+@objc @_inheritsConvenienceInitializers open class ITGRatingView : Inthegametv.ITGInteractionView, Inthegametv.NibView {
   @objc @IBOutlet weak public var subtitleLabel: UIKit.UILabel!
   @objc @IBOutlet weak public var statsContainer: UIKit.UIView!
   @objc @IBOutlet weak public var statsUserLabel: UIKit.UILabel!
   @objc @IBOutlet weak public var statsTotalLabel: UIKit.UILabel!
-  open func createAnswerView() -> Inthegametv.RatingAnswerView
+  open func createAnswerView() -> Inthegametv.ITGRatingAnswerView
   @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers open class PollView : Inthegametv.InteractionView, Inthegametv.NibView {
-  open func createAnswerView() -> Inthegametv.PollAnswerView
+@objc @_inheritsConvenienceInitializers open class ITGPollView : Inthegametv.ITGInteractionView, Inthegametv.NibView {
+  open func createAnswerView() -> Inthegametv.ITGPollAnswerView
   @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers open class TriviaAnswerView : UIKit.UIView, Inthegametv.NibView {
+@objc @_inheritsConvenienceInitializers open class ITGTriviaAnswerView : UIKit.UIView, Inthegametv.NibView {
   @objc @IBOutlet weak public var button: UIKit.UIButton!
   @objc override dynamic public func awakeFromNib()
   open func setButtonStyleNormal()
@@ -85,7 +85,7 @@ public enum ITGAnimationType {
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers open class RatingAnswerView : UIKit.UIView, Inthegametv.NibView {
+@objc @_inheritsConvenienceInitializers open class ITGRatingAnswerView : UIKit.UIView, Inthegametv.NibView {
   @objc @IBOutlet weak public var button: UIKit.UIButton!
   @objc override dynamic public func awakeFromNib()
   open func setButtonStyleNormal()
@@ -106,7 +106,7 @@ extension NibView where Self : UIKit.UIView {
 extension UIImage {
   public class func imageWithColor(_ color: UIKit.UIColor) -> UIKit.UIImage
 }
-@objc @_inheritsConvenienceInitializers open class InteractionView : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers open class ITGInteractionView : UIKit.UIView {
   @objc @IBOutlet weak public var mainButton: UIKit.UIButton!
   @objc @IBOutlet weak public var closeButton: UIKit.UIButton!
   @objc @IBOutlet weak public var titleLabel: UIKit.UILabel!

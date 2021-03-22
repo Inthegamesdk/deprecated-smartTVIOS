@@ -8,9 +8,9 @@
 import UIKit
 import Inthegametv
 
-class CustomTriviaView: TriviaView {
+class CustomTriviaView: ITGTriviaView {
     
-    override func createAnswerView() -> TriviaAnswerView {
+    override func createAnswerView() -> ITGTriviaAnswerView {
         return CustomTriviaAnswerView.fromNib()
     }
 }

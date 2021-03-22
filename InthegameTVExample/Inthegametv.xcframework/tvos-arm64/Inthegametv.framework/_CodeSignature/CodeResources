@@ -4,29 +4,61 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		WpuY6cJauWkKkSCKCnRuNA5qDvU=
+		</data>
 		<key>Assets.car</key>
 		<data>
 		RuHrJEogZ+Ymd+YMy761yjtbmOw=
 		</data>
 		<key>Headers/Inthegametv-Swift.h</key>
 		<data>
-		CvIMQZIS1hsI7gmTnThEhvrkflY=
+		S/p108qOCPGG4phPWVDG0Nq3LXg=
 		</data>
 		<key>Headers/Inthegametv.h</key>
 		<data>
 		aD33S08T4eaDyFMa8axEwKhEUhk=
 		</data>
+		<key>ITGPollAnswerView.nib</key>
+		<data>
+		pYjBuAsNCc/yduhz4YfhPbUml9M=
+		</data>
+		<key>ITGPollView.nib</key>
+		<data>
+		uO8wdX4gjcG7ezHlCGcbRqs61Y4=
+		</data>
+		<key>ITGRatingAnswerView.nib</key>
+		<data>
+		Dsx+BPDszzrtcvC6nORawLJ7Bi4=
+		</data>
+		<key>ITGRatingView.nib</key>
+		<data>
+		/fiJEIYwzXG8/ilpWqjWZtOnVmY=
+		</data>
+		<key>ITGTriviaAnswerView.nib</key>
+		<data>
+		tYDyVK8mX0YqVfVdM5LVuFEylkI=
+		</data>
+		<key>ITGTriviaView.nib</key>
+		<data>
+		fdH0dh+AHeonW17p2gjIA9Ssk3M=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		VCfWi97ppsskv/3GdoIYi06x3Xk=
 		</data>
+		<key>Modules/.DS_Store</key>
+		<data>
+		MNJvfgiZTBH42YCU5oRBHb16JUs=
+		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64-apple-tvos.swiftsourceinfo</key>
 		<data>
-		0F47njZJerTkKMVDmr8uIYjzJvA=
+		zAkpDW0fF2L+JlPS+T149VCVcLA=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		0F47njZJerTkKMVDmr8uIYjzJvA=
+		zAkpDW0fF2L+JlPS+T149VCVcLA=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
@@ -34,11 +66,11 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		uXsT7z6uefdicVXSkMogCk74Nis=
+		iwoLlvixI6AHzVdpgVkHjUHZWvE=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		wB1KNvWivZofMBJWIXayAVbDwmQ=
+		H/jntCXcOy4aBhl60d0okLEQRtg=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,39 +78,15 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		uXsT7z6uefdicVXSkMogCk74Nis=
+		iwoLlvixI6AHzVdpgVkHjUHZWvE=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		wB1KNvWivZofMBJWIXayAVbDwmQ=
+		H/jntCXcOy4aBhl60d0okLEQRtg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		cu4QEb4oj6SXKnzqg29ABpsF++c=
-		</data>
-		<key>PollAnswerView.nib</key>
-		<data>
-		BJvBwmwdyYep3ZNOgHOvh+17hBI=
-		</data>
-		<key>PollView.nib</key>
-		<data>
-		RPmLteCfIWZl8GnwoJXEkE4Ye0Y=
-		</data>
-		<key>RatingAnswerView.nib</key>
-		<data>
-		8bRTbHrZNXa/zBrEaXtgr2kNtPM=
-		</data>
-		<key>RatingView.nib</key>
-		<data>
-		E6Ed6g1NVV+a9B3Astjnsx+yIbg=
-		</data>
-		<key>TriviaAnswerView.nib</key>
-		<data>
-		qXh3XgVMsZy6ESsAKKdp04GzoC8=
-		</data>
-		<key>TriviaView.nib</key>
-		<data>
-		iEwRDofOpBn0Iw/pMSePeu1jsTc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -94,7 +102,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6kEVPNyhYNl0BxOsh1QdrYKuTHpuqhBpoQJe0qCA5b4=
+			guhTGAZ0WGU0RzmZ/7tfgzPXeSbN8YFGR94sd27Ssy0=
 			</data>
 		</dict>
 		<key>Headers/Inthegametv.h</key>
@@ -104,18 +112,60 @@
 			ORi+3V9q1SoSOkYqA+sw/JyEAOrReoF2SswgIeH7QHI=
 			</data>
 		</dict>
+		<key>ITGPollAnswerView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CjSFz9el0JX/8PZV+p8gomDMYxtEH6BtJ4/2YFj275s=
+			</data>
+		</dict>
+		<key>ITGPollView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TlzN3owOCrGlLrWb6zxctjRL1/wz9O1iOuiCsAA3eeo=
+			</data>
+		</dict>
+		<key>ITGRatingAnswerView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			q67XP4Oa7IcF+A2yVmh/UoPPb595GJF5OIqopR61POE=
+			</data>
+		</dict>
+		<key>ITGRatingView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lZ8LaV8lpoi5NHJkF5Rh3mpCgjhIU8visnkaeT5F4Pw=
+			</data>
+		</dict>
+		<key>ITGTriviaAnswerView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a+xP3eTe1s4dyBY8mnuZ0ryARxCTlSFaFzqLZ1N+MGM=
+			</data>
+		</dict>
+		<key>ITGTriviaView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hBvCZE6wOqvJGwTxu68kPcgooBDLvXrW1MzaVLJ0FNk=
+			</data>
+		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64-apple-tvos.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Un73oT2n5HxAA13jmUb/Q+7SSDn5FqIW9fkC6+IzZq0=
+			J70buq+ssyzSB4GrshCRPVUkjFLIlvu2t5jAkRWY4r0=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Un73oT2n5HxAA13jmUb/Q+7SSDn5FqIW9fkC6+IzZq0=
+			J70buq+ssyzSB4GrshCRPVUkjFLIlvu2t5jAkRWY4r0=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftdoc</key>
@@ -129,14 +179,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FwjH9PveXC6hmBakAo8Y2SF+xoh5V+40GdakRT1yQlk=
+			871wc1JoX+U5J748m5lJ7drR7PdY7wF+2TUNTjBJhfc=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xm2HHu/TAGNVQhKaOgWHqXw69YVVvjSCsk4XdLd18lA=
+			mep/yxa2nCc/txA4hdLr3EXLXWqfc4EFutDad1pH+DQ=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftdoc</key>
@@ -150,14 +200,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FwjH9PveXC6hmBakAo8Y2SF+xoh5V+40GdakRT1yQlk=
+			871wc1JoX+U5J748m5lJ7drR7PdY7wF+2TUNTjBJhfc=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xm2HHu/TAGNVQhKaOgWHqXw69YVVvjSCsk4XdLd18lA=
+			mep/yxa2nCc/txA4hdLr3EXLXWqfc4EFutDad1pH+DQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -165,48 +215,6 @@
 			<key>hash2</key>
 			<data>
 			hb06UCpsQhZri3RWmMlYQsNI1MUxp7SoDyaw04jYMxo=
-			</data>
-		</dict>
-		<key>PollAnswerView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5E7Dx6nGKggk0iBF5kabgFWlkXnc7+XpzD6HxQlZ8ho=
-			</data>
-		</dict>
-		<key>PollView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ICYUzwXXKHnXt29UClOE7rJcCPiTiQs7ulWfThcGHEY=
-			</data>
-		</dict>
-		<key>RatingAnswerView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GRQDTecVKgdXzwkn1mxNpheqDHRascU09G41BExNCTU=
-			</data>
-		</dict>
-		<key>RatingView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0gIrLllXEay/qrYRvmsCZWWdynEicBjKSKyFA1n0qR4=
-			</data>
-		</dict>
-		<key>TriviaAnswerView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qQHOZmsEs433VJbnue7vS4FQHJFcI3kYbEezTzF3ByI=
-			</data>
-		</dict>
-		<key>TriviaView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mzJE9rYqo9lhbh4nMCY91iShnsigPt7vsJm5E+/rVX4=
 			</data>
 		</dict>
 	</dict>

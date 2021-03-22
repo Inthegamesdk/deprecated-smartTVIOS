@@ -8,7 +8,7 @@
 import UIKit
 import Inthegametv
 
-class CustomTriviaAnswerView: TriviaAnswerView {
+class CustomTriviaAnswerView: ITGTriviaAnswerView {
     
     override func setButtonStyleNormal() {
         //fill in for a custom button style

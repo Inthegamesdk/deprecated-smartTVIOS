@@ -8,9 +8,9 @@
 import UIKit
 import Inthegametv
 
-class CustomRatingView: RatingView {
+class CustomRatingView: ITGRatingView {
     
-    override func createAnswerView() -> RatingAnswerView {
+    override func createAnswerView() -> ITGRatingAnswerView {
         return CustomRatingAnswerView.fromNib()
     }
 

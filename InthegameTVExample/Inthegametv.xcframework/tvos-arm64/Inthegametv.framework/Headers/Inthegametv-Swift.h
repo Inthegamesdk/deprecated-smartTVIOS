@@ -207,17 +207,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-@class NSCoder;
-
-SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
-@interface ITGOverlayView : UIView
-- (void)didMoveToWindow;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
 @class UIButton;
 @class UILabel;
 @class UIStackView;
@@ -228,9 +217,10 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 @protocol UIFocusEnvironment;
 @class UIFocusUpdateContext;
 @class UIFocusAnimationCoordinator;
+@class NSCoder;
 
-SWIFT_CLASS("_TtC11Inthegametv15InteractionView")
-@interface InteractionView : UIView
+SWIFT_CLASS("_TtC11Inthegametv18ITGInteractionView")
+@interface ITGInteractionView : UIView
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified mainButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified closeButton;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
@@ -255,8 +245,18 @@ SWIFT_CLASS("_TtC11Inthegametv15InteractionView")
 @end
 
 
-SWIFT_CLASS("_TtC11Inthegametv14PollAnswerView")
-@interface PollAnswerView : UIView
+SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
+@interface ITGOverlayView : UIView
+- (void)didMoveToWindow;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+SWIFT_CLASS("_TtC11Inthegametv17ITGPollAnswerView")
+@interface ITGPollAnswerView : UIView
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified button;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statsLabel;
 - (void)awakeFromNib;
@@ -265,15 +265,15 @@ SWIFT_CLASS("_TtC11Inthegametv14PollAnswerView")
 @end
 
 
-SWIFT_CLASS("_TtC11Inthegametv8PollView")
-@interface PollView : InteractionView
+SWIFT_CLASS("_TtC11Inthegametv11ITGPollView")
+@interface ITGPollView : ITGInteractionView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC11Inthegametv16RatingAnswerView")
-@interface RatingAnswerView : UIView
+SWIFT_CLASS("_TtC11Inthegametv19ITGRatingAnswerView")
+@interface ITGRatingAnswerView : UIView
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified button;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -281,8 +281,8 @@ SWIFT_CLASS("_TtC11Inthegametv16RatingAnswerView")
 @end
 
 
-SWIFT_CLASS("_TtC11Inthegametv10RatingView")
-@interface RatingView : InteractionView
+SWIFT_CLASS("_TtC11Inthegametv13ITGRatingView")
+@interface ITGRatingView : ITGInteractionView
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified subtitleLabel;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified statsContainer;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified statsUserLabel;
@@ -292,8 +292,8 @@ SWIFT_CLASS("_TtC11Inthegametv10RatingView")
 @end
 
 
-SWIFT_CLASS("_TtC11Inthegametv16TriviaAnswerView")
-@interface TriviaAnswerView : UIView
+SWIFT_CLASS("_TtC11Inthegametv19ITGTriviaAnswerView")
+@interface ITGTriviaAnswerView : UIView
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified button;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -301,8 +301,8 @@ SWIFT_CLASS("_TtC11Inthegametv16TriviaAnswerView")
 @end
 
 
-SWIFT_CLASS("_TtC11Inthegametv10TriviaView")
-@interface TriviaView : InteractionView
+SWIFT_CLASS("_TtC11Inthegametv13ITGTriviaView")
+@interface ITGTriviaView : ITGInteractionView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

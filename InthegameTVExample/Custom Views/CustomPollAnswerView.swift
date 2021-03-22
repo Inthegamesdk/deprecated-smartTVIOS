@@ -8,7 +8,7 @@
 import UIKit
 import Inthegametv
 
-class CustomPollAnswerView: PollAnswerView {
+class CustomPollAnswerView: ITGPollAnswerView {
 
     override func setButtonStyleNormal() {
         //fill in for a custom button style

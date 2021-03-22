@@ -179,15 +179,15 @@ extension PlayerViewController: ITGOverlayDelegate {
 
 //this delegate is optional, use it only if you want to customize the design elements
 extension PlayerViewController: ITGLayoutDelegate {
-    func customPollView() -> PollView? {
+    func customPollView() -> ITGPollView? {
         return CustomPollView.fromNib()
     }
     
-    func customRatingView() -> RatingView? {
+    func customRatingView() -> ITGRatingView? {
         return CustomRatingView.fromNib()
     }
     
-    func customTriviaView() -> TriviaView? {
+    func customTriviaView() -> ITGTriviaView? {
         return CustomTriviaView.fromNib()
     }
 }

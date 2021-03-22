@@ -8,7 +8,7 @@
 import UIKit
 import Inthegametv
 
-class CustomRatingAnswerView: RatingAnswerView {
+class CustomRatingAnswerView: ITGRatingAnswerView {
     
     override func setButtonStyleNormal() {
         //fill in for a custom button style
