@@ -7,11 +7,11 @@ The example uses CocoaPods, so you'll need to run `pod install` and open the wor
 
 ## Installation
 
-To install, drag **Inthegametv.framework** into your project. 
+To install, drag **Inthegametv.xcframework** into your project. 
 
 Configure the framework as Embedded on your project target settings:
 
-![](https://imgur.com/J55NVJn.jpg)
+![](https://i.imgur.com/4PWyk71.png)
 
 
 And import the SDK in your code:
@@ -21,10 +21,6 @@ And import the SDK in your code:
 The framework requires the Socket.IO-Client library. If you are using CocoaPods, add this line to your podfile:
 
 `pod 'Socket.IO-Client-Swift', '~> 15.2.0'`
-
-If the framework fails to run in the simulator, you'll need to exclude arm64 architectures in your project's build settings:
-
-![](https://imgur.com/qNRmq1D.jpg)
 
 
 ## Usage
@@ -73,4 +69,21 @@ func overlayRequestedFocus()
 func overlayReleasedFocus()
 ```
 
+## Optional Customization
 
+You can also adjust the bottom margin for the content, and the type of animation:
+```
+overlay.bottomMargin = 0
+overlay.animationType = .fromBottom
+```
+
+If you want to replace our content visuals with your own customizable interfaces, you can implement the layout delegate:
+```
+overlay.layoutDelegate = self
+```
+Then you can create subclasses of our content views with customized layouts, and provide them in the delegate methods. A full working example is included in the repository. The delegate methods are: 
+```
+func customPollView() -> PollView?
+func customRatingView() -> RatingView?
+func customTriviaView() -> TriviaView?
+```
