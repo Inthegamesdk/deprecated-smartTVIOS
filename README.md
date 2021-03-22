@@ -83,7 +83,7 @@ overlay.layoutDelegate = self
 ```
 Then you can create subclasses of our content views with customized layouts, and provide them in the delegate methods. A full working example is included in the repository. The delegate methods are: 
 ```
-func customPollView() -> PollView?
-func customRatingView() -> RatingView?
-func customTriviaView() -> TriviaView?
+func customPollView() -> ITGPollView?
+func customRatingView() -> ITGRatingView?
+func customTriviaView() -> ITGTriviaView?
 ```
