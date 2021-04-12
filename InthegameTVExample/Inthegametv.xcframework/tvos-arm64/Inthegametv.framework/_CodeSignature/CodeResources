@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		pQlDYfaXHcsEoSv30spe0bq07V8=
+		</data>
 		<key>Assets.car</key>
 		<data>
 		RuHrJEogZ+Ymd+YMy761yjtbmOw=
@@ -18,39 +22,39 @@
 		</data>
 		<key>ITGPollAnswerView.nib</key>
 		<data>
-		SjNaJLDG/xlVeu4Krvv1NN5NPxQ=
+		Hj75N36rCHcr7gCQCZOI5MsB4t4=
 		</data>
 		<key>ITGPollView.nib</key>
 		<data>
-		OrFTZZLhPc4kbt4E6Huh1RY1dS0=
+		KbOLKGB+HT0DKXtVe49BXDeRQns=
 		</data>
 		<key>ITGRatingAnswerView.nib</key>
 		<data>
-		hfyIJX3lX44DvD5q+/SAvPvZnX8=
+		npe+llCtcL0PtywFTR1eZ8fZC+A=
 		</data>
 		<key>ITGRatingView.nib</key>
 		<data>
-		63yXvO0eEMVSRgpYzsP8R60K1xc=
+		RArmB0OUQ8HAMj4S4lol3KMOG2c=
 		</data>
 		<key>ITGTriviaAnswerView.nib</key>
 		<data>
-		BsGJvsooZI1IGm4JAZkgZc/3s4Q=
+		z4lwSx6WjJgpbzIoJzsTCzIX5ws=
 		</data>
 		<key>ITGTriviaView.nib</key>
 		<data>
-		RG5M5NLSYpNaK0KfrKtk8baUB5Q=
+		oM/y0i8rJHL4Dm52kbtm8H3SmVM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oLohFnwksrrTQfar/0mPQ+h9zVU=
+		bEWVIgNjSiiO//D73+QPyVSfIF8=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64-apple-tvos.swiftsourceinfo</key>
 		<data>
-		CiR5lxc9AY1cXfurjEx3ASTp+aI=
+		ZxDsS/VoCdCOsqpnxcRuDo8l+Kw=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		CiR5lxc9AY1cXfurjEx3ASTp+aI=
+		ZxDsS/VoCdCOsqpnxcRuDo8l+Kw=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
@@ -62,7 +66,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		3tJ62zjxEZywKW9A0P0VHP6oPHU=
+		GiZo58rYYMWXY0+iRJCIBE0HyAE=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -74,7 +78,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		3tJ62zjxEZywKW9A0P0VHP6oPHU=
+		GiZo58rYYMWXY0+iRJCIBE0HyAE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -108,56 +112,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S9rxudVb4Arqq3cuDUX1DYkqMC6kJ6r6l3C5TKvc+4U=
+			TS581F5woso4uPEX1F9M2wS44ytQmkIHzZXysUtxxp0=
 			</data>
 		</dict>
 		<key>ITGPollView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hqHiviQVVvt13JO8bm2VEShMQ0YqvJ4OGjo0I1OzusI=
+			cPdXzjGMZ/fOGYCobSn/cYmeUw9CaR5Qyja4UgRXs54=
 			</data>
 		</dict>
 		<key>ITGRatingAnswerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Pg1WBXGE3guTiaqj8S/Nlgp0XXyzZJ96NScIqsOyVo=
+			2YM6+18vKX/XTgV4GKZHGM1td84E9SfI0vJ5qo72LuA=
 			</data>
 		</dict>
 		<key>ITGRatingView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3csfaLeybnSdC1T/sMSMzkOaKzjfcOTCs2np+/c7Hqk=
+			8+vWIwgVwobbkrrTOlugrqav+/OxfK5rkNS9r/6um0E=
 			</data>
 		</dict>
 		<key>ITGTriviaAnswerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			to1qsszh75QyJC6W0HhbjIbFitlxK+a8gtBONmnGQvM=
+			Djs3yw3fBrBmrD1qdf1PcjVW3HS2fsnvEMbotcHNNwk=
 			</data>
 		</dict>
 		<key>ITGTriviaView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TeML51gPx7zZAfPa6Mh9Bb0D2rTr4hH6jZ0G9G1FjVI=
+			kMdGTzR1sn/5wcJQPKdyA0HbbDI9iWiMGvZcTk3YMhE=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64-apple-tvos.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0d6gc0Rvw2IiRaKFedZP4mYPHe4X9G6j4PHTfkByvYA=
+			Ovl9vwrjfs4JfxZcs0RFJoQlFAqH6ZpA6k1feTIuyj4=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0d6gc0Rvw2IiRaKFedZP4mYPHe4X9G6j4PHTfkByvYA=
+			Ovl9vwrjfs4JfxZcs0RFJoQlFAqH6ZpA6k1feTIuyj4=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftdoc</key>
@@ -178,7 +182,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G0V+B/0DfpLyQF7Qf7LW6ws2u5D3I2WfQ2XoPRGDgEA=
+			1aYvNoM5I48PppjpjCOTj+uV9S9M0ZiQVn9pS7I/8Cw=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftdoc</key>
@@ -199,7 +203,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G0V+B/0DfpLyQF7Qf7LW6ws2u5D3I2WfQ2XoPRGDgEA=
+			1aYvNoM5I48PppjpjCOTj+uV9S9M0ZiQVn9pS7I/8Cw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
