@@ -77,6 +77,10 @@ public enum ITGAnimationType {
 }
 @objc @_inheritsConvenienceInitializers open class ITGTriviaAnswerView : UIKit.UIView, Inthegametv.NibView {
   @objc @IBOutlet weak public var button: UIKit.UIButton!
+  @objc @IBOutlet weak public var titleLabel: UIKit.UILabel?
+  @objc @IBOutlet weak public var checkMarkView: UIKit.UIImageView?
+  @objc @IBOutlet weak public var imageView: UIKit.UIImageView?
+  @objc @IBOutlet weak public var imageConstraint: UIKit.NSLayoutConstraint?
   @objc override dynamic public func awakeFromNib()
   open func setButtonStyleNormal()
   open func setButtonStyleCorrect()

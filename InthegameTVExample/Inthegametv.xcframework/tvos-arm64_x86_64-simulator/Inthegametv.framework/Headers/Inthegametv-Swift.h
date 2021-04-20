@@ -297,6 +297,10 @@ SWIFT_CLASS("_TtC11Inthegametv13ITGRatingView")
 SWIFT_CLASS("_TtC11Inthegametv19ITGTriviaAnswerView")
 @interface ITGTriviaAnswerView : UIView
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified button;
+@property (nonatomic, weak) IBOutlet UILabel * _Nullable titleLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Nullable checkMarkView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Nullable imageView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Nullable imageConstraint;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -614,6 +618,10 @@ SWIFT_CLASS("_TtC11Inthegametv13ITGRatingView")
 SWIFT_CLASS("_TtC11Inthegametv19ITGTriviaAnswerView")
 @interface ITGTriviaAnswerView : UIView
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified button;
+@property (nonatomic, weak) IBOutlet UILabel * _Nullable titleLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Nullable checkMarkView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Nullable imageView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Nullable imageConstraint;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
