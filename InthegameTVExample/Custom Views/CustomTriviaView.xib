@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomTriviaView" customModule="InthegameTVDemo" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomTriviaView" customModule="InthegameTVExample" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="1500" height="700"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -183,19 +183,19 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="0KO-t5-gt0" secondAttribute="trailing" constant="80" id="2Y1-tm-thb"/>
-                        <constraint firstAttribute="trailing" secondItem="k4y-pm-yYD" secondAttribute="trailing" constant="36" id="4be-bB-VrZ"/>
+                        <constraint firstAttribute="right" secondItem="0KO-t5-gt0" secondAttribute="right" constant="80" id="2Y1-tm-thb"/>
+                        <constraint firstAttribute="right" secondItem="k4y-pm-yYD" secondAttribute="right" constant="36" id="4be-bB-VrZ"/>
                         <constraint firstAttribute="height" constant="168" id="FA9-3r-aUM"/>
-                        <constraint firstItem="0KO-t5-gt0" firstAttribute="leading" secondItem="LT2-Sx-wt0" secondAttribute="trailing" constant="24" id="FQ8-ld-znp"/>
+                        <constraint firstItem="0KO-t5-gt0" firstAttribute="left" secondItem="LT2-Sx-wt0" secondAttribute="right" constant="24" id="FQ8-ld-znp"/>
                         <constraint firstItem="LT2-Sx-wt0" firstAttribute="centerY" secondItem="eGr-oL-h4A" secondAttribute="centerY" id="I8e-e8-zuH"/>
                         <constraint firstAttribute="bottom" secondItem="0KO-t5-gt0" secondAttribute="bottom" id="Ron-P6-Cwp"/>
                         <constraint firstAttribute="bottom" secondItem="3Mu-Dl-ec6" secondAttribute="bottom" id="TNO-eM-F5O"/>
-                        <constraint firstItem="LT2-Sx-wt0" firstAttribute="leading" secondItem="eGr-oL-h4A" secondAttribute="leading" constant="26" id="VUm-lv-moR"/>
-                        <constraint firstItem="3Mu-Dl-ec6" firstAttribute="leading" secondItem="eGr-oL-h4A" secondAttribute="leading" id="cO8-JV-yVf"/>
+                        <constraint firstItem="LT2-Sx-wt0" firstAttribute="left" secondItem="eGr-oL-h4A" secondAttribute="left" constant="26" id="VUm-lv-moR"/>
+                        <constraint firstItem="3Mu-Dl-ec6" firstAttribute="left" secondItem="eGr-oL-h4A" secondAttribute="left" id="cO8-JV-yVf"/>
                         <constraint firstItem="3Mu-Dl-ec6" firstAttribute="top" secondItem="eGr-oL-h4A" secondAttribute="top" id="dpR-IY-bvc"/>
                         <constraint firstItem="0KO-t5-gt0" firstAttribute="top" secondItem="eGr-oL-h4A" secondAttribute="top" id="h5o-cF-Rkz"/>
                         <constraint firstItem="k4y-pm-yYD" firstAttribute="top" secondItem="eGr-oL-h4A" secondAttribute="top" id="iYe-cD-mxc"/>
-                        <constraint firstAttribute="trailing" secondItem="3Mu-Dl-ec6" secondAttribute="trailing" constant="-168" id="luP-Vm-YdS"/>
+                        <constraint firstAttribute="right" secondItem="3Mu-Dl-ec6" secondAttribute="right" constant="-168" id="luP-Vm-YdS"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3i-y1-ie3">
@@ -208,11 +208,11 @@
             <constraints>
                 <constraint firstItem="i3i-y1-ie3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="I0Q-lI-6Os"/>
                 <constraint firstItem="eGr-oL-h4A" firstAttribute="top" secondItem="i3i-y1-ie3" secondAttribute="bottom" id="Lby-yw-QAx"/>
-                <constraint firstItem="Pmt-tb-8Ig" firstAttribute="trailing" secondItem="i3i-y1-ie3" secondAttribute="trailing" constant="80" id="SGD-cQ-tMj"/>
-                <constraint firstItem="eGr-oL-h4A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aV9-yf-LFr"/>
-                <constraint firstItem="eGr-oL-h4A" firstAttribute="trailing" secondItem="Pmt-tb-8Ig" secondAttribute="trailing" id="kqM-MD-gLw"/>
+                <constraint firstItem="Pmt-tb-8Ig" firstAttribute="right" secondItem="i3i-y1-ie3" secondAttribute="right" constant="80" id="SGD-cQ-tMj"/>
+                <constraint firstItem="eGr-oL-h4A" firstAttribute="left" secondItem="iN0-l3-epB" secondAttribute="left" id="aV9-yf-LFr"/>
+                <constraint firstItem="eGr-oL-h4A" firstAttribute="right" secondItem="Pmt-tb-8Ig" secondAttribute="right" id="kqM-MD-gLw"/>
                 <constraint firstItem="eGr-oL-h4A" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="lOg-8i-KKK"/>
-                <constraint firstItem="i3i-y1-ie3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="160" id="t58-pC-qJM"/>
+                <constraint firstItem="i3i-y1-ie3" firstAttribute="left" secondItem="iN0-l3-epB" secondAttribute="left" constant="160" id="t58-pC-qJM"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

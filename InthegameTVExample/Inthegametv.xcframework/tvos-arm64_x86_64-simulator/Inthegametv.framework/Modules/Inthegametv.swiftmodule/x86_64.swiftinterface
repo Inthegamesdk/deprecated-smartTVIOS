@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target x86_64-apple-tvos14.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Inthegametv
 import AVFoundation/*.AVMakeRect*/
 import Foundation
@@ -22,32 +22,35 @@ public enum ITGAnimationType {
   case fromRight
   case fromBottom
   public static func == (a: Inthegametv.ITGAnimationType, b: Inthegametv.ITGAnimationType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 @objc @_inheritsConvenienceInitializers public class ITGOverlayView : UIKit.UIView {
   weak public var delegate: Inthegametv.ITGOverlayDelegate?
   weak public var layoutDelegate: Inthegametv.ITGLayoutDelegate?
   public var bottomMargin: CoreGraphics.CGFloat
   public var animationType: Inthegametv.ITGAnimationType
-  public func load(channelID: Swift.String, broadcasterName: Swift.String, delegate: Inthegametv.ITGOverlayDelegate?, language: Swift.String = "en", devMode: Swift.Bool = false)
+  public func load(channelID: Swift.String, broadcasterName: Swift.String, delegate: Inthegametv.ITGOverlayDelegate?, language: Swift.String = "en", devMode: Swift.Bool = false, userBroadcasterForeignID: Swift.String? = nil, userInitialName: Swift.String? = nil)
   public class func resetUser()
   public func closeInteractionIfNeeded() -> Swift.Bool
   public func isDisplayingInteraction() -> Swift.Bool
   public func videoPaused()
   public func videoPlaying(time: Swift.Double)
   @objc override dynamic public func didMoveToWindow()
-  @objc deinit
+  @objc override dynamic public var preferredFocusEnvironments: [UIKit.UIFocusEnvironment] {
+    @objc get
+  }
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class ITGTriviaView : Inthegametv.ITGInteractionView, Inthegametv.NibView {
   open func createAnswerView() -> Inthegametv.ITGTriviaAnswerView
-  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class ITGPollAnswerView : UIKit.UIView, Inthegametv.NibView {
   @objc @IBOutlet weak public var button: UIKit.UIButton!
@@ -55,9 +58,9 @@ public enum ITGAnimationType {
   @objc override dynamic public func awakeFromNib()
   open func setButtonStyleNormal()
   open func setButtonStyleSelected()
-  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class ITGRatingView : Inthegametv.ITGInteractionView, Inthegametv.NibView {
   @objc @IBOutlet weak public var subtitleLabel: UIKit.UILabel!
@@ -65,15 +68,15 @@ public enum ITGAnimationType {
   @objc @IBOutlet weak public var statsUserLabel: UIKit.UILabel!
   @objc @IBOutlet weak public var statsTotalLabel: UIKit.UILabel!
   open func createAnswerView() -> Inthegametv.ITGRatingAnswerView
-  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class ITGPollView : Inthegametv.ITGInteractionView, Inthegametv.NibView {
   open func createAnswerView() -> Inthegametv.ITGPollAnswerView
-  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class ITGTriviaAnswerView : UIKit.UIView, Inthegametv.NibView {
   @objc @IBOutlet weak public var button: UIKit.UIButton!
@@ -85,18 +88,18 @@ public enum ITGAnimationType {
   open func setButtonStyleNormal()
   open func setButtonStyleCorrect()
   open func setButtonStyleIncorrect()
-  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class ITGRatingAnswerView : UIKit.UIView, Inthegametv.NibView {
   @objc @IBOutlet weak public var button: UIKit.UIButton!
   @objc override dynamic public func awakeFromNib()
   open func setButtonStyleNormal()
   open func setButtonStyleSelected()
-  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 public protocol NibView {
   static func nibName() -> Swift.String
