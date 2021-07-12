@@ -17,6 +17,7 @@ public protocol ITGLayoutDelegate : AnyObject {
   func customPollView() -> Inthegametv.ITGPollView?
   func customRatingView() -> Inthegametv.ITGRatingView?
   func customTriviaView() -> Inthegametv.ITGTriviaView?
+  func customNoticeView() -> Inthegametv.ITGNotice?
 }
 public enum ITGAnimationType {
   case fromRight
@@ -32,6 +33,7 @@ public enum ITGAnimationType {
   weak public var layoutDelegate: Inthegametv.ITGLayoutDelegate?
   public var bottomMargin: CoreGraphics.CGFloat
   public var animationType: Inthegametv.ITGAnimationType
+  public var showNotices: Swift.Bool
   public func load(channelID: Swift.String, broadcasterName: Swift.String, delegate: Inthegametv.ITGOverlayDelegate?, language: Swift.String = "en", devMode: Swift.Bool = false, userBroadcasterForeignID: Swift.String? = nil, userInitialName: Swift.String? = nil)
   public class func resetUser()
   public func closeInteractionIfNeeded() -> Swift.Bool
@@ -88,6 +90,13 @@ public enum ITGAnimationType {
   open func setButtonStyleNormal()
   open func setButtonStyleCorrect()
   open func setButtonStyleIncorrect()
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class ITGNotice : UIKit.UIView, Inthegametv.NibView {
+  @objc override dynamic public func awakeFromNib()
+  @objc @IBAction public func actionClose(_ sender: Any)
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit

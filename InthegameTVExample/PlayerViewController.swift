@@ -190,4 +190,8 @@ extension PlayerViewController: ITGLayoutDelegate {
     func customTriviaView() -> ITGTriviaView? {
         return CustomTriviaView.fromNib()
     }
+    
+    func customNoticeView() -> ITGNotice? {
+        return CustomNotice.fromNib()
+    }
 }

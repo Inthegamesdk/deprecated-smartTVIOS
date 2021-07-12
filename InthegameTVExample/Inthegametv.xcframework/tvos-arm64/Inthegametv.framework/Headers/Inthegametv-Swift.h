@@ -246,6 +246,15 @@ SWIFT_CLASS("_TtC11Inthegametv18ITGInteractionView")
 @end
 
 
+SWIFT_CLASS("_TtC11Inthegametv9ITGNotice")
+@interface ITGNotice : UIView
+- (void)awakeFromNib;
+- (IBAction)actionClose:(id _Nonnull)sender;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 @interface ITGOverlayView : UIView
 - (void)didMoveToWindow;
@@ -253,6 +262,7 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
