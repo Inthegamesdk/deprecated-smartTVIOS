@@ -50,6 +50,8 @@ public enum ITGAnimationType {
 }
 @objc @_inheritsConvenienceInitializers open class ITGTriviaView : Inthegametv.ITGInteractionView, Inthegametv.NibView {
   open func createAnswerView() -> Inthegametv.ITGTriviaAnswerView
+  open func didAnswerTrivia()
+  open func didLoadView()
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -59,7 +61,7 @@ public enum ITGAnimationType {
   @objc @IBOutlet weak public var statsLabel: UIKit.UILabel!
   @objc override dynamic public func awakeFromNib()
   open func setButtonStyleNormal()
-  open func setButtonStyleSelected()
+  open func setButtonStyleCompleted(selected: Swift.Bool)
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -70,12 +72,16 @@ public enum ITGAnimationType {
   @objc @IBOutlet weak public var statsUserLabel: UIKit.UILabel!
   @objc @IBOutlet weak public var statsTotalLabel: UIKit.UILabel!
   open func createAnswerView() -> Inthegametv.ITGRatingAnswerView
+  open func didAnswerRating()
+  open func didLoadView()
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class ITGPollView : Inthegametv.ITGInteractionView, Inthegametv.NibView {
   open func createAnswerView() -> Inthegametv.ITGPollAnswerView
+  open func didAnswerPoll()
+  open func didLoadView()
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -105,7 +111,7 @@ public enum ITGAnimationType {
   @objc @IBOutlet weak public var button: UIKit.UIButton!
   @objc override dynamic public func awakeFromNib()
   open func setButtonStyleNormal()
-  open func setButtonStyleSelected()
+  open func setButtonStyleCompleted(selected: Swift.Bool)
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit

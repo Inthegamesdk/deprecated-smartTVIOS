@@ -15,8 +15,10 @@ class CustomRatingAnswerView: ITGRatingAnswerView {
         //if you do not override these methods, the default Inthegame button style will be used
     }
     
-    override func setButtonStyleSelected() {
-        let imageNormal = UIImage.imageWithColor(.blue)
-        button.setBackgroundImage(imageNormal, for: .normal)
+    override func setButtonStyleCompleted(selected: Bool) {
+        if selected {
+            let imageNormal = UIImage.imageWithColor(.blue)
+            button.setBackgroundImage(imageNormal, for: .normal)
+        }
     }
 }

@@ -14,4 +14,14 @@ class CustomRatingView: ITGRatingView {
         return CustomRatingAnswerView.fromNib()
     }
 
+    // The following override methods are optional
+    // and provide you with extra options for customization
+    
+    override func didLoadView() {
+        //customize view at startup after it finishes loading
+    }
+    
+    override func didAnswerRating() {
+        //customize view after answering if needed
+    }
 }
