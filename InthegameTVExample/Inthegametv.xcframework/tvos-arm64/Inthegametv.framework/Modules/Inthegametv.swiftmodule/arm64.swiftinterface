@@ -4,7 +4,7 @@
 import AVFoundation/*.AVMakeRect*/
 import Foundation
 @_exported import Inthegametv
-import SocketIO
+import PusherSwift
 import Swift
 import UIKit
 public protocol ITGOverlayDelegate : AnyObject {

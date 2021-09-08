@@ -1,20 +1,24 @@
 PODS:
-  - Socket.IO-Client-Swift (15.2.0):
-    - Starscream (~> 3.1)
-  - Starscream (3.1.1)
+  - NWWebSocket (0.5.2)
+  - PusherSwift (10.0.0):
+    - NWWebSocket (~> 0.5.2)
+    - TweetNacl (~> 1.0.0)
+  - TweetNacl (1.0.2)
 
 DEPENDENCIES:
-  - Socket.IO-Client-Swift (~> 15.2.0)
+  - PusherSwift
 
 SPEC REPOS:
   trunk:
-    - Socket.IO-Client-Swift
-    - Starscream
+    - NWWebSocket
+    - PusherSwift
+    - TweetNacl
 
 SPEC CHECKSUMS:
-  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
-  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  NWWebSocket: 21f0c73639815da3272862c912275b26102aa80c
+  PusherSwift: 264eaceb921a5f8e166f01a2242371179540c7ff
+  TweetNacl: 3abf4d1d2082b0114e7a67410e300892448951e6
 
-PODFILE CHECKSUM: c0310e0dc5c3718b224ca2c903d17380e346db70
+PODFILE CHECKSUM: 040108becfa62c866765c3b06c472ca32b14ac47
 
 COCOAPODS: 1.10.0
