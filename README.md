@@ -18,10 +18,11 @@ And import the SDK in your code:
 
 `import Inthegametv`
 
-The framework requires the Socket.IO-Client library. If you are using CocoaPods, add this line to your podfile:
+The framework requires the Pusher library. If you are using CocoaPods, add this line to your podfile:
 
-`pod 'Socket.IO-Client-Swift', '~> 15.2.0'`
+`pod 'PusherSwift'`
 
+After running `pod install` there is one more setting you'll need to tweak. Open your workspace and select the Pods project file. You'll see 3 new targets for the dependencies: `PusherSwift`, `NWWebSocket` and `TweetNacl`. For each of them, go to `Build Settings` and switch `Build Libraries for Distribution` to Yes.
 
 ## Usage
 
