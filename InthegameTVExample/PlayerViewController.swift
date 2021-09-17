@@ -63,6 +63,8 @@ class PlayerViewController: UIViewController {
     }
     
     func setupOverlay() {
+        let environment = ITGEnvironment.testDefault
+        
         //create the overlay and add it to your view hierarchy
         let overlay = ITGOverlayView(frame: view.bounds)
         overlay.translatesAutoresizingMaskIntoConstraints = true
@@ -70,7 +72,7 @@ class PlayerViewController: UIViewController {
         containerView.addSubview(overlay)
         
         //load your channel to start up the ITG system
-        overlay.load(channelID: channelID, broadcasterName: broadcaster, delegate: self)
+        overlay.load(channelID: channelID, broadcasterName: broadcaster, environment: environment, delegate: self)
         overlayView = overlay
         
         // enable the layout delegate if you wish to set custom layouts

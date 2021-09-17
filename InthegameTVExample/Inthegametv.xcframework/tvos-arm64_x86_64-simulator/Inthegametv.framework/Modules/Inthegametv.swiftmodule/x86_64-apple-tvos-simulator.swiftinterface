@@ -34,7 +34,11 @@ public enum ITGAnimationType {
   public var bottomMargin: CoreGraphics.CGFloat
   public var animationType: Inthegametv.ITGAnimationType
   public var showNotices: Swift.Bool
-  public func load(channelID: Swift.String, broadcasterName: Swift.String, delegate: Inthegametv.ITGOverlayDelegate?, language: Swift.String = "en", devMode: Swift.Bool = false, userBroadcasterForeignID: Swift.String? = nil, userInitialName: Swift.String? = nil)
+  public var injectionDelay: Swift.Int? {
+    get
+    set
+  }
+  public func load(channelID: Swift.String, broadcasterName: Swift.String, environment: Inthegametv.ITGEnvironment, delegate: Inthegametv.ITGOverlayDelegate?, language: Swift.String = "en", userBroadcasterForeignID: Swift.String? = nil, userInitialName: Swift.String? = nil)
   public class func resetUser()
   public func closeInteractionIfNeeded() -> Swift.Bool
   public func isDisplayingInteraction() -> Swift.Bool
@@ -106,6 +110,17 @@ public enum ITGAnimationType {
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
+}
+public struct ITGEnvironment {
+  public let apiBaseURL: Swift.String
+  public let imageBaseURL: Swift.String
+  public let pusherKey: Swift.String
+  public let pusherCluster: Swift.String
+  public let envName: Swift.String
+  public init(apiBaseURL: Swift.String, imageBaseURL: Swift.String, pusherKey: Swift.String, pusherCluster: Swift.String, envName: Swift.String)
+  public static let testDefault: Inthegametv.ITGEnvironment
+  public static let devDefault: Inthegametv.ITGEnvironment
+  public static let productionDefault: Inthegametv.ITGEnvironment
 }
 @objc @_inheritsConvenienceInitializers open class ITGRatingAnswerView : UIKit.UIView, Inthegametv.NibView {
   @objc @IBOutlet weak public var button: UIKit.UIButton!
