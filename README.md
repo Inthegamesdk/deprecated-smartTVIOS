@@ -35,12 +35,13 @@ var overlayView: ITGOverlayView?
 
 And configure it on `viewDidLoad`:
 ```
+let environment = ITGEnvironment.testDefault
 let overlay = ITGOverlayView(frame: view.bounds)
 overlay.translatesAutoresizingMaskIntoConstraints = true
 overlay.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 containerView.addSubview(overlay)
         
-overlay.load(channelID: "<your_channel_id>", broadcasterName: "<your_broadcaster_name>", delegate: self)
+overlay.load(channelID: "<your_channel_id>", broadcasterName: "<your_broadcaster_name>", environment: environment, delegate: self)
 overlayView = overlay
 ```
 
@@ -72,6 +73,19 @@ func overlayReleasedFocus()
 
 If you want to connect ITG content with your user's account, there are variables in the `load()` method where you can specify your user's ID and display name. The variables are called `userBroadcasterForeignID` and `userInitialName`.
 
+
+## Custom Environments
+
+If you are provided with custom environment settings, please specify them before loading the overlay:
+```
+let environment = ITGEnvironment(
+    apiBaseURL: "xxxxx",
+    imageBaseURL: "xxxxx",
+    pusherKey: "xxxxx",
+    pusherCluster: "xxxxx",
+    envName: "xxxxx"
+)
+```
 
 ## Optional Customization
 
