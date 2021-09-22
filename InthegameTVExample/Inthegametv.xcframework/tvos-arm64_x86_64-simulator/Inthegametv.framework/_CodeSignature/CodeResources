@@ -22,51 +22,51 @@
 		</data>
 		<key>ITGNotice.nib</key>
 		<data>
-		YiT/UU9+pQm7j139XJvCqs1/eV0=
+		E+ojIfBrD0KsPGNlPs3al0uBF3I=
 		</data>
 		<key>ITGPollAnswerView.nib</key>
 		<data>
-		+oLQZi7ipbSMr5vT0aCCLZjq6Wo=
+		du9vEiWqvlF1D5Go7XVNnjGCPpU=
 		</data>
 		<key>ITGPollView.nib</key>
 		<data>
-		+H8esW2gDbjpHglTzEBK05Y6sY0=
+		H4jpG+VwadqXevnoHCPDm0Loiq0=
 		</data>
 		<key>ITGRatingAnswerView.nib</key>
 		<data>
-		5p5O+b/up69FRDS/ndjbOJQHums=
+		GO9OtYQcVcQQ67DrUF3w/qfc40o=
 		</data>
 		<key>ITGRatingView.nib</key>
 		<data>
-		Ek3oYdDbd0G6DtEOhXgA6e1+42g=
+		J+xzhay//5mSn/3qsgd6AxQbf7s=
 		</data>
 		<key>ITGTriviaAnswerView.nib</key>
 		<data>
-		IxP7Vk+p4ytH7m8AJUovnLG2MNM=
+		N982lv9tQ8bHBfbfKVF8yH6ei/Y=
 		</data>
 		<key>ITGTriviaView.nib</key>
 		<data>
-		Dlhm/vFrSIcbVdxsj/yGQEToCSs=
+		XAB7Hn+9zSKj0RsV1u+PNUS9Pg0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MoIn0heamZL6LXAjzDQRj2GmCWU=
+		W1LwnxdA5KOge2S5xlodzpVUaRo=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64-apple-tvos-simulator.swiftsourceinfo</key>
 		<data>
-		IgHK6GGMOAY+qMM8Skp91Bza6Fg=
+		Pe3t2kjyCck93+8X5gRy80Omctc=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		IgHK6GGMOAY+qMM8Skp91Bza6Fg=
+		Pe3t2kjyCck93+8X5gRy80Omctc=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
 		<data>
-		+X77ccyYEJriGvq2K8SFUzsjjyQ=
+		VIB/yZp9pKPxPUmfNBqdws+QsAo=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		+X77ccyYEJriGvq2K8SFUzsjjyQ=
+		VIB/yZp9pKPxPUmfNBqdws+QsAo=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		fYjGOEQ0WdZb+kIAh+l0u2r5Y3o=
+		grqapYgTgW7irlEd9bdmRUERXzY=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		fYjGOEQ0WdZb+kIAh+l0u2r5Y3o=
+		grqapYgTgW7irlEd9bdmRUERXzY=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		C7AXEdZPhFEx9Bxj2Bfny7izW4s=
+		QqTcno+YGetva00H7JnMa8ZoGEw=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		C7AXEdZPhFEx9Bxj2Bfny7izW4s=
+		QqTcno+YGetva00H7JnMa8ZoGEw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -148,77 +148,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WOIiL0YWE6/9CnGP0c8e2UeZqTvwj8oUR7cu3tYESOw=
+			HGOKxbDx+bon8fH8YuaxZs6WbjVAM2CGIpDVucTgrGA=
 			</data>
 		</dict>
 		<key>ITGPollAnswerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8sdGfjHUA0ComxeZUBFcEWy3IPLNfV+b2am9RA3Hk3Y=
+			bybCH8bKuRIwL+dJlaH9Xo+fMWH9NJQI4lnMH6AImrI=
 			</data>
 		</dict>
 		<key>ITGPollView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a5u6R/bxujmEFg9whXjvPjPqoD6XqI14AT9RKGzOAaY=
+			UZ5HKhYfSvr1cNGtxp9CfAccr4RTdvC02Hlzn3Q6jAE=
 			</data>
 		</dict>
 		<key>ITGRatingAnswerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SbnoamfMKeF/c6phIc2xUW2A1dUMX+Ytc3NklYzWgsM=
+			5Osb6RPLgfjiS2wTFtZqsfKjREsjfXG6Vd3S3PvXwqQ=
 			</data>
 		</dict>
 		<key>ITGRatingView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CIRkAQ59ZbbipRxGOfZBUbm8dXCxWx2cpBXZ0Bn73B4=
+			Rn0YQYU4SKaD9J3hO1cLR2rd38meBtQEilc4Gves4Ww=
 			</data>
 		</dict>
 		<key>ITGTriviaAnswerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hyS2KI8TuX6UExDKXDac5aVtSuV9uECf288wQvBK1ZE=
+			A1RNyjkXHSCRQtv8fA1wyCVsQRDF5J/1+nuN3MQAUYk=
 			</data>
 		</dict>
 		<key>ITGTriviaView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hFYAy5W82qEo/3DJ7pDfuckeP2Qe6SFm01E1LZ3ITXQ=
+			Gzgkd07D2TbX26dwOVhbfM/eXUAnNCs9gBRDJoe4xyQ=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64-apple-tvos-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b0mBhdKwIMTiq+VKDqfGLH6PkWm764bdsP2BH73dTOg=
+			ZRBcfKXL/0mo6kpIKLqSBRdic4KeKcp+XKIqA3l4t2w=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b0mBhdKwIMTiq+VKDqfGLH6PkWm764bdsP2BH73dTOg=
+			ZRBcfKXL/0mo6kpIKLqSBRdic4KeKcp+XKIqA3l4t2w=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UiRX+oDzXoK1Zb9kWJf5SoXxroz2tLi3DRRsrA7B7jA=
+			GwYvTipX7A4mtJOWp18SX+FaJp8vftOTJaTq0cQynP0=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UiRX+oDzXoK1Zb9kWJf5SoXxroz2tLi3DRRsrA7B7jA=
+			GwYvTipX7A4mtJOWp18SX+FaJp8vftOTJaTq0cQynP0=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
@@ -239,7 +239,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LfgFIwC7Kj/J/4f8XAoKvVW/BniPOGxWaLOv+M3ggro=
+			N9NBXja0JPfmWadMiqtJxdwRnP2PbAMHqjAvoy5aPyI=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftdoc</key>
@@ -260,7 +260,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LfgFIwC7Kj/J/4f8XAoKvVW/BniPOGxWaLOv+M3ggro=
+			N9NBXja0JPfmWadMiqtJxdwRnP2PbAMHqjAvoy5aPyI=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
@@ -281,7 +281,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0UH/SGHnbXPctZikBQomYyzA+ZdmhrP9qXDeMuxMZgU=
+			IMswdu2DpnUVM2RKxykVq9hOdeNsnc+Mq9l9AwfrBZ8=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64.swiftdoc</key>
@@ -302,7 +302,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0UH/SGHnbXPctZikBQomYyzA+ZdmhrP9qXDeMuxMZgU=
+			IMswdu2DpnUVM2RKxykVq9hOdeNsnc+Mq9l9AwfrBZ8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

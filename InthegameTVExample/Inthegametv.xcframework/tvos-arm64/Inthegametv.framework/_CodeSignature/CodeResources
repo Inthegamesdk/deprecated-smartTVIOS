@@ -22,43 +22,43 @@
 		</data>
 		<key>ITGNotice.nib</key>
 		<data>
-		5TY/iMUCMsBC2Y8vSfkzmU6gwHk=
+		szIcLNIXuNgtb1wQYWJi4ecYDiY=
 		</data>
 		<key>ITGPollAnswerView.nib</key>
 		<data>
-		JAT2hROrlD8TiI5dGiiGjEQYNyc=
+		iY24MCqoGkRhyPW7zeCrpj4NK6M=
 		</data>
 		<key>ITGPollView.nib</key>
 		<data>
-		MSy0lspbrL80bXB8cSbVccYG97w=
+		Y5lcQ95aSm8nIUCw3XPVYNrRBW4=
 		</data>
 		<key>ITGRatingAnswerView.nib</key>
 		<data>
-		FTP9pc9hsfTFFTfm1SejE124sWY=
+		F4Y5nV+0IJFcdPIIL9NuaODiXrU=
 		</data>
 		<key>ITGRatingView.nib</key>
 		<data>
-		htpSyUdgQwE/jCi7FmGBHDbCyCg=
+		ogOk9lTLGgEl4K/q7mycfrpt3VM=
 		</data>
 		<key>ITGTriviaAnswerView.nib</key>
 		<data>
-		q0pKFUL76cS+zVzyuc96411S3ck=
+		/i6I0ERz8hLw2xJeHY58dK6k9bg=
 		</data>
 		<key>ITGTriviaView.nib</key>
 		<data>
-		k7yfPVyCpRwOVGdpWh8oWSnud4k=
+		pcyVezwLghtgN4przE6UKUmkNdw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IpnqqjnWVdlt1kezVgscydRxf4k=
+		Zkeqf7wm3Zj0w3lfcLC9ee7uBSo=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64-apple-tvos.swiftsourceinfo</key>
 		<data>
-		m2nO8ctU0dP05g8LFDodjqs1ook=
+		mXzDz1cQ2c3qxkK5fNCubvDK+Jk=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		m2nO8ctU0dP05g8LFDodjqs1ook=
+		mXzDz1cQ2c3qxkK5fNCubvDK+Jk=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		g/qwejOQLL4h2gK/eCWetFSUuPk=
+		QxRZq+TxO0jU0RBjx5cxZf9BU5s=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		g/qwejOQLL4h2gK/eCWetFSUuPk=
+		QxRZq+TxO0jU0RBjx5cxZf9BU5s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -116,63 +116,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qNTBdiiClUdC0tm3X1EIY7bsUqd3+eR52TB82nnh5w4=
+			T4ZEVBPs27hJHEHjKj21Q/nHIIyYZDQhicNaQ9GpFU0=
 			</data>
 		</dict>
 		<key>ITGPollAnswerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MDiG75HIIgLUFWxnt+4SmF4Pmn+XscEbIT0/d8aM1io=
+			nu/dob9GlZBgrAGlEKCOKByzS6mbPjzIDxrjjHanF3I=
 			</data>
 		</dict>
 		<key>ITGPollView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VazhlK8i2z2g3apQtLiubjbR1Fo1IbPPVlvMTgPX/s4=
+			RBOXN6V+ikF6Hk1Mjmnp6QkavSjKr9ZGo4bEh48E68I=
 			</data>
 		</dict>
 		<key>ITGRatingAnswerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jqf4hSOOx3LPTAJhhxzKmivIRQZErgA4tEPNj+UyxoU=
+			agOWje70DQs/d4duF62swL59oMcg+Nsp4N67DGuAuVs=
 			</data>
 		</dict>
 		<key>ITGRatingView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h5voJB/q+FtPNAdTrhRc9ZIt8Shjo/sbP+Z4KMfMaWM=
+			ABkwq4lJcDp8PjBXjfjFAxynffOyNpQOnY6B4de6DdI=
 			</data>
 		</dict>
 		<key>ITGTriviaAnswerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UxOFUDLW8LFFV0wvffPwJuSuZ8E1CL5qwQ/f3iePeeo=
+			R+8HmpIt2xfnIZeeTXGzN/VL61KMMN2f5POOCBmP6BM=
 			</data>
 		</dict>
 		<key>ITGTriviaView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zYvdYQBJaGpRg3tnBCoVsXylF+obzTcS4CbY+zSAiO8=
+			9YbsuTdQ21MkIp3AUpLBvXwfBPjBDv9htgiRUB7a6Zo=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64-apple-tvos.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r+oNGnC+FkbUUyprMzjdjFwxM9/EVBQ+spOD7JJZZBU=
+			6Ausi9A6+gVEUzEJzzO8jpgp8UnrhH7QQljZK9DUOGM=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r+oNGnC+FkbUUyprMzjdjFwxM9/EVBQ+spOD7JJZZBU=
+			6Ausi9A6+gVEUzEJzzO8jpgp8UnrhH7QQljZK9DUOGM=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftdoc</key>
@@ -193,7 +193,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9afgPAqi+zEqxWyD3RRRrXUVOa+YKE1gPIGVCH1O6fE=
+			h0sDAtuqMEXDAqysOKguAwMCbt3DtQEnJVlwyMWdw28=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftdoc</key>
@@ -214,7 +214,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9afgPAqi+zEqxWyD3RRRrXUVOa+YKE1gPIGVCH1O6fE=
+			h0sDAtuqMEXDAqysOKguAwMCbt3DtQEnJVlwyMWdw28=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
