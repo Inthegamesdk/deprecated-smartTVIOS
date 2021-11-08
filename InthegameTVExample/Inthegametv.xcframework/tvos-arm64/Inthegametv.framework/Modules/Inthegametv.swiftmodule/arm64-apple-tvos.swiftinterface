@@ -19,6 +19,8 @@ public protocol ITGLayoutDelegate : AnyObject {
   func customRatingView() -> Inthegametv.ITGRatingView?
   func customTriviaView() -> Inthegametv.ITGTriviaView?
   func customNoticeView() -> Inthegametv.ITGNotice?
+  func customWikiView() -> Inthegametv.ITGWikiView?
+  func customProductView() -> Inthegametv.ITGProductView?
 }
 public enum ITGAnimationType {
   case fromRight
@@ -56,7 +58,6 @@ public enum ITGAnimationType {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGTriviaView : Inthegametv.ITGInteractionView, Inthegametv.NibView {
   @_Concurrency.MainActor(unsafe) open func createAnswerView() -> Inthegametv.ITGTriviaAnswerView
   @_Concurrency.MainActor(unsafe) open func didAnswerTrivia()
-  @_Concurrency.MainActor(unsafe) open func didLoadView()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -82,7 +83,6 @@ public enum ITGAnimationType {
     @_Concurrency.MainActor(unsafe) @objc get
   }
   @_Concurrency.MainActor(unsafe) open func didAnswerRating()
-  @_Concurrency.MainActor(unsafe) open func didLoadView()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -107,7 +107,6 @@ public enum ITGAnimationType {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGPollView : Inthegametv.ITGInteractionView, Inthegametv.NibView {
   @_Concurrency.MainActor(unsafe) open func createAnswerView() -> Inthegametv.ITGPollAnswerView
   @_Concurrency.MainActor(unsafe) open func didAnswerPoll()
-  @_Concurrency.MainActor(unsafe) open func didLoadView()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -129,6 +128,15 @@ public enum ITGAnimationType {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGNotice : UIKit.UIView, Inthegametv.NibView {
   @objc override dynamic public func awakeFromNib()
   @objc @IBAction @_Concurrency.MainActor(unsafe) public func actionClose(_ sender: Any)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGWikiView : Inthegametv.ITGInteractionView, Inthegametv.NibView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredFocusEnvironments: [UIKit.UIFocusEnvironment] {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) open func didAnswerPoll()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -253,16 +261,29 @@ extension UIKit.UIColor {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func pressesEnded(_ presses: Swift.Set<UIKit.UIPress>, with event: UIKit.UIPressesEvent?)
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGProductView : Inthegametv.ITGInteractionView, Inthegametv.NibView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredFocusEnvironments: [UIKit.UIFocusEnvironment] {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Inthegametv.ITGProductView : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGInteractionView : UIKit.UIView {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var mainIcon: UIKit.UIImageView!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var titleLabel: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var answerStack: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var titleLabel: UIKit.UILabel?
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var errorLabel: UIKit.UILabel?
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var answerStack: UIKit.UIStackView?
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var indicator: UIKit.UIActivityIndicatorView?
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var backgroundView: UIKit.UIImageView!
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var mainContainer: UIKit.UIView!
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var infoContainer: UIKit.UIView!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var promotionContainer: UIKit.UIView!
-  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var promotionFlipContainer: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var promotionContainer: UIKit.UIView?
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var promotionFlipContainer: UIKit.UIView?
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var scrollView: UIKit.UIScrollView?
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var fixedWConstraint: UIKit.NSLayoutConstraint?
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var expandedWConstraint: UIKit.NSLayoutConstraint?
@@ -272,6 +293,7 @@ extension UIKit.UIColor {
   }
   @_Concurrency.MainActor(unsafe) open func createInfoView() -> Inthegametv.ITGInfoView
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
+  @_Concurrency.MainActor(unsafe) open func didLoadView()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit

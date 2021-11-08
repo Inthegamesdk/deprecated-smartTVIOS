@@ -196,4 +196,12 @@ extension PlayerViewController: ITGLayoutDelegate {
     func customNoticeView() -> ITGNotice? {
         return CustomNotice.fromNib()
     }
+    
+    func customWikiView() -> ITGWikiView? {
+        return CustomWikiView.fromNib()
+    }
+    
+    func customProductView() -> ITGProductView? {
+        return CustomProductView.fromNib()
+    }
 }

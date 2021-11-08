@@ -276,14 +276,15 @@ SWIFT_CLASS("_TtC11Inthegametv11ITGInfoView")
 SWIFT_CLASS("_TtC11Inthegametv18ITGInteractionView")
 @interface ITGInteractionView : UIView
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified mainIcon;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
-@property (nonatomic, weak) IBOutlet UIStackView * _Null_unspecified answerStack;
+@property (nonatomic, weak) IBOutlet UILabel * _Nullable titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Nullable errorLabel;
+@property (nonatomic, weak) IBOutlet UIStackView * _Nullable answerStack;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Nullable indicator;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backgroundView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified mainContainer;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified infoContainer;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified promotionContainer;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified promotionFlipContainer;
+@property (nonatomic, weak) IBOutlet UIView * _Nullable promotionContainer;
+@property (nonatomic, weak) IBOutlet UIView * _Nullable promotionFlipContainer;
 @property (nonatomic, weak) IBOutlet UIScrollView * _Nullable scrollView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Nullable fixedWConstraint;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Nullable expandedWConstraint;
@@ -333,6 +334,21 @@ SWIFT_CLASS("_TtC11Inthegametv11ITGPollView")
 @end
 
 
+SWIFT_CLASS("_TtC11Inthegametv14ITGProductView")
+@interface ITGProductView : ITGInteractionView
+@property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextField;
+
+@interface ITGProductView (SWIFT_EXTENSION(Inthegametv)) <UITextFieldDelegate>
+- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
+- (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
+@end
+
+
 SWIFT_CLASS("_TtC11Inthegametv19ITGRatingAnswerView")
 @interface ITGRatingAnswerView : UIView
 @property (nonatomic, weak) IBOutlet FocusTvButton * _Null_unspecified button;
@@ -370,6 +386,14 @@ SWIFT_CLASS("_TtC11Inthegametv19ITGTriviaAnswerView")
 
 SWIFT_CLASS("_TtC11Inthegametv13ITGTriviaView")
 @interface ITGTriviaView : ITGInteractionView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC11Inthegametv11ITGWikiView")
+@interface ITGWikiView : ITGInteractionView
+@property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
