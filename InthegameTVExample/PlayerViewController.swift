@@ -12,7 +12,7 @@ import Inthegametv
 
 let broadcaster = "orlandofcchannel"
 let channelID = "ORLvsNYCFC"
-let videoURL = "https://media.inthegame.io/uploads/videos/streamers/a64706dd0f42356e93d299075940c456.857ecbb7a131f9bb4940a6b8ad5ec70e.mp4"
+let videoURL = "https://media2.inthegame.io/uploads/videos/streamers/a64706dd0f42356e93d299075940c456.857ecbb7a131f9bb4940a6b8ad5ec70e.mp4"
 
 class PlayerViewController: UIViewController {
 
