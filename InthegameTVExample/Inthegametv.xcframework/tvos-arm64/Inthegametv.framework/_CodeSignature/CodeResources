@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		MTUvDgrjqY8sl2mXMjoOoIShlYg=
+		mQKx+LxD/7UMWAU3SOujoNB8crA=
 		</data>
 		<key>Headers/Inthegametv-Swift.h</key>
 		<data>
@@ -58,15 +58,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KSj1SyCpAh3eVcfvoe1z8TszXJQ=
+		pXh2lidTa9p04KNP8u5ex8kz3qg=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64-apple-tvos.swiftsourceinfo</key>
 		<data>
-		63sLPJGX1A0S7VQlNr6mvd91C7s=
+		dyNB0w96Vjwt9JAnhMuk1UUcd3M=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		63sLPJGX1A0S7VQlNr6mvd91C7s=
+		dyNB0w96Vjwt9JAnhMuk1UUcd3M=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		gYRHFGB9BcIDR+oz39zFDXwftCk=
+		X9g0I9ps74eAIV96F+GMZVpyjJc=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		gYRHFGB9BcIDR+oz39zFDXwftCk=
+		X9g0I9ps74eAIV96F+GMZVpyjJc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -123,7 +123,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xz467W0PhoVrB1vNwnVV6IQllGPkdTx6/p7uhCmbxN0=
+			2KxgiZfbaAqY1by/ekHFjnaU2W1vhYSi2e2jS1qdgqc=
 			</data>
 		</dict>
 		<key>Headers/Inthegametv-Swift.h</key>
@@ -214,14 +214,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LDa4W+jlAhbxq8ebD77sZCE/uKxMjmvjKWAD9M8dAYA=
+			tAKoLmRDDbRkyafy90xCtE+lnJnGnei1tbK6yAfQq0k=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LDa4W+jlAhbxq8ebD77sZCE/uKxMjmvjKWAD9M8dAYA=
+			tAKoLmRDDbRkyafy90xCtE+lnJnGnei1tbK6yAfQq0k=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos.swiftdoc</key>
@@ -242,7 +242,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nQTnnlKpLmmd9aUlHCCexFbFt5MI00NoxYmU3dSgNec=
+			B8c/vI3glBachjLTCZIGIx5TZASVE3jTrWr35fwtUJY=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64.swiftdoc</key>
@@ -263,7 +263,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nQTnnlKpLmmd9aUlHCCexFbFt5MI00NoxYmU3dSgNec=
+			B8c/vI3glBachjLTCZIGIx5TZASVE3jTrWr35fwtUJY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
