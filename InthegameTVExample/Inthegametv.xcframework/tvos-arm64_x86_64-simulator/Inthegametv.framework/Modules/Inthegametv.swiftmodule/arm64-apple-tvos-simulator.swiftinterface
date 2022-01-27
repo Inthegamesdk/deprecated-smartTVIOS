@@ -106,6 +106,10 @@ public enum ITGAnimationType {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGPollView : Inthegametv.ITGInteractionView, Inthegametv.NibView {
   @_Concurrency.MainActor(unsafe) open func createAnswerView() -> Inthegametv.ITGPollAnswerView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredFocusEnvironments: [UIKit.UIFocusEnvironment] {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor(unsafe) open func didAnswerPoll()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -130,6 +134,10 @@ public enum ITGAnimationType {
   @objc @IBAction @_Concurrency.MainActor(unsafe) public func actionClose(_ sender: Any)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ITGTool {
+  public static func getVideoURL(channelId: Swift.String, broadcaster: Swift.String, language: Swift.String, environment: Inthegametv.ITGEnvironment, completion: @escaping (Swift.String?, Swift.Error?) -> ())
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGWikiView : Inthegametv.ITGInteractionView, Inthegametv.NibView {

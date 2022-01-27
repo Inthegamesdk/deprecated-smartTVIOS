@@ -331,6 +331,8 @@ SWIFT_CLASS("_TtC11Inthegametv17ITGPollAnswerView")
 
 SWIFT_CLASS("_TtC11Inthegametv11ITGPollView")
 @interface ITGPollView : ITGInteractionView
+@property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
+- (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -741,6 +743,8 @@ SWIFT_CLASS("_TtC11Inthegametv17ITGPollAnswerView")
 
 SWIFT_CLASS("_TtC11Inthegametv11ITGPollView")
 @interface ITGPollView : ITGInteractionView
+@property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
+- (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
