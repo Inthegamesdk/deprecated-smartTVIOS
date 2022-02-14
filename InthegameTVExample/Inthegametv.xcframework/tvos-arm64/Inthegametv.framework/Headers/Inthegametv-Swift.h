@@ -317,6 +317,7 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 
 
 
+
 SWIFT_CLASS("_TtC11Inthegametv17ITGPollAnswerView")
 @interface ITGPollAnswerView : UIView
 @property (nonatomic, weak) IBOutlet FocusTvButton * _Null_unspecified button;
@@ -393,12 +394,22 @@ SWIFT_CLASS("_TtC11Inthegametv13ITGTriviaView")
 @end
 
 
+SWIFT_CLASS("_TtC11Inthegametv15ITGUserAreaView")
+@interface ITGUserAreaView : UIView
+- (void)awakeFromNib;
+@property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC11Inthegametv11ITGWikiView")
 @interface ITGWikiView : ITGInteractionView
 @property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

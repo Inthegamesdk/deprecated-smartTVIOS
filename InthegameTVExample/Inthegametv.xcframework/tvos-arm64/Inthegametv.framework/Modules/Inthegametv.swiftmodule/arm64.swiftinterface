@@ -8,6 +8,15 @@ import PusherSwift
 import Swift
 import UIKit
 import _Concurrency
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGUserAreaView : UIKit.UIView, Inthegametv.NibView {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredFocusEnvironments: [UIKit.UIFocusEnvironment] {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
 public protocol ITGOverlayDelegate : AnyObject {
   func overlayRequestedPause()
   func overlayRequestedPlay()
