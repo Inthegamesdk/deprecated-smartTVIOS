@@ -318,6 +318,7 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 
 
 
+
 SWIFT_CLASS("_TtC11Inthegametv17ITGPollAnswerView")
 @interface ITGPollAnswerView : UIView
 @property (nonatomic, weak) IBOutlet FocusTvButton * _Null_unspecified button;

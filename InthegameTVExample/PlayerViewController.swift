@@ -20,9 +20,10 @@ class PlayerViewController: UIViewController {
     
     public var overlayView: ITGOverlayView?
     
-    var playerController: AVPlayerViewController?
-    var player: AVPlayer?
-    var seekTimer: Timer?
+    private var playerController: AVPlayerViewController?
+    private var player: AVPlayer?
+    private var seekTimer: Timer?
+    private var initialHeight: CGFloat!
 
     weak var customPreferredFocusView: UIView?
     
@@ -35,6 +36,8 @@ class PlayerViewController: UIViewController {
     }
     
     func startVideo() {
+        initialHeight = view.frame.height
+        
         let asset = AVAsset(url: URL(string: videoURL)!)
         let item = AVPlayerItem(asset: asset)
         let player = AVPlayer(playerItem: item)
@@ -43,7 +46,7 @@ class PlayerViewController: UIViewController {
         playerViewController.player = player
         playerViewController.showsPlaybackControls = true
         playerViewController.playbackControlsIncludeInfoViews = false
-        playerViewController.videoGravity = .resizeAspect
+        playerViewController.videoGravity = .resize
         self.playerController = playerViewController
         if let view = playerViewController.view {
             view.frame = self.view.bounds
@@ -154,6 +157,19 @@ class PlayerViewController: UIViewController {
 }
 
 extension PlayerViewController: ITGOverlayDelegate {
+    func shrinkPlayerHeight(_ height: CGFloat) {
+        //optional - you can adjust the video size when the overlay is showing content
+        playerController?.view.frame.size = CGSize(width: view.frame.width, height: view.frame.height - height)
+        view.setNeedsFocusUpdate()
+        view.updateFocusIfNeeded()
+    }
+    
+    func applyDefaultPlayerHeight() {
+        playerController?.view.frame.size = CGSize(width: view.frame.width, height: initialHeight)
+        view.setNeedsFocusUpdate()
+        view.updateFocusIfNeeded()
+    }
+    
     func overlayRequestedPause() {
         player?.pause()
     }

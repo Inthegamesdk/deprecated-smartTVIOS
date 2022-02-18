@@ -320,6 +320,7 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 
 
 
+
 SWIFT_CLASS("_TtC11Inthegametv17ITGPollAnswerView")
 @interface ITGPollAnswerView : UIView
 @property (nonatomic, weak) IBOutlet FocusTvButton * _Null_unspecified button;
@@ -737,6 +738,7 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

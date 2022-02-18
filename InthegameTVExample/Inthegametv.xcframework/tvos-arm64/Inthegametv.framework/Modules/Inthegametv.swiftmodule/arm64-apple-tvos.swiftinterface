@@ -8,6 +8,16 @@ import PusherSwift
 import Swift
 import UIKit
 import _Concurrency
+public enum MenuKey : Swift.String {
+  case none
+  case up, down, left, right, press, back
+  case longPress
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGUserAreaView : UIKit.UIView, Inthegametv.NibView {
   @objc override dynamic open func awakeFromNib()
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredFocusEnvironments: [UIKit.UIFocusEnvironment] {
@@ -22,6 +32,8 @@ public protocol ITGOverlayDelegate : AnyObject {
   func overlayRequestedPlay()
   func overlayRequestedFocus()
   func overlayReleasedFocus()
+  func shrinkPlayerHeight(_ height: CoreGraphics.CGFloat)
+  func applyDefaultPlayerHeight()
 }
 public protocol ITGLayoutDelegate : AnyObject {
   func customPollView() -> Inthegametv.ITGPollView?
@@ -50,7 +62,7 @@ public enum ITGAnimationType {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public func load(channelID: Swift.String, broadcasterName: Swift.String, environment: Inthegametv.ITGEnvironment, delegate: Inthegametv.ITGOverlayDelegate?, language: Swift.String = "en", userBroadcasterForeignID: Swift.String? = nil, userInitialName: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) public func load(channelID: Swift.String, broadcasterName: Swift.String, environment: Inthegametv.ITGEnvironment, delegate: Inthegametv.ITGOverlayDelegate?, language: Swift.String = "en", userBroadcasterForeignID: Swift.String? = nil, userInitialName: Swift.String? = nil, openMenuKey: Inthegametv.MenuKey = .none)
   @_Concurrency.MainActor(unsafe) public class func resetUser()
   @_Concurrency.MainActor(unsafe) public func closeInteractionIfNeeded() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func isDisplayingInteraction() -> Swift.Bool
@@ -315,5 +327,8 @@ extension Inthegametv.ITGProductView : UIKit.UITextFieldDelegate {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+extension Inthegametv.MenuKey : Swift.Equatable {}
+extension Inthegametv.MenuKey : Swift.Hashable {}
+extension Inthegametv.MenuKey : Swift.RawRepresentable {}
 extension Inthegametv.ITGAnimationType : Swift.Equatable {}
 extension Inthegametv.ITGAnimationType : Swift.Hashable {}
