@@ -10,6 +10,7 @@ import AVFoundation
 
 
 class AVPlayerView: UIView {
+    
     var player: AVPlayer? {
         get {
             return playerLayer.player
@@ -27,4 +28,5 @@ class AVPlayerView: UIView {
     override class var layerClass: AnyClass {
         return AVPlayerLayer.self
     }
+    
 }

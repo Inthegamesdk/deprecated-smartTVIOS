@@ -10,9 +10,11 @@ import AVFoundation
 import AVKit
 import Inthegametv
 
-let broadcaster = "orlandofcchannel"
-let channelID = "ORLvsNYCFC"
-let videoURL = "https://media2.inthegame.io/uploads/videos/streamers/a64706dd0f42356e93d299075940c456.857ecbb7a131f9bb4940a6b8ad5ec70e.mp4"
+let channelSlug = "channel_one_stage"
+let accountName = "cellcom"
+let accountId = "631da52247f9e460d1039022"
+let language = "en"
+let videoURL = "https://media2.inthegame.io/uploads/automation_demo.mp4"
 
 class PlayerViewController: UIViewController {
 
@@ -24,6 +26,7 @@ class PlayerViewController: UIViewController {
     private var player: AVPlayer?
     private var seekTimer: Timer?
     private var initialHeight: CGFloat!
+    private var initialWidth: CGFloat!
 
     weak var customPreferredFocusView: UIView?
     
@@ -32,11 +35,11 @@ class PlayerViewController: UIViewController {
         startVideo()
         setupOverlay()
         configureMenuButtonHandler()
-        configureDownButtonHandler()
     }
     
     func startVideo() {
         initialHeight = view.frame.height
+        initialWidth = view.frame.height
         
         let asset = AVAsset(url: URL(string: videoURL)!)
         let item = AVPlayerItem(asset: asset)
@@ -66,8 +69,6 @@ class PlayerViewController: UIViewController {
     }
     
     func setupOverlay() {
-        let environment = ITGEnvironment.testDefault
-        
         //create the overlay and add it to your view hierarchy
         let overlay = ITGOverlayView(frame: view.bounds)
         overlay.translatesAutoresizingMaskIntoConstraints = true
@@ -75,17 +76,8 @@ class PlayerViewController: UIViewController {
         containerView.addSubview(overlay)
         
         //load your channel to start up the ITG system
-        overlay.load(channelID: channelID, broadcasterName: broadcaster, environment: environment, delegate: self)
+        overlay.load(channelSlug: channelSlug, accountId: accountId, environment: .stage, delegate: self, language: language, foreignId: nil)
         overlayView = overlay
-        
-        // enable the layout delegate if you wish to set custom layouts
-//        overlay.layoutDelegate = self
-        
-        // you can adjust the spacing between the content and bottom of the screen
-//        overlay.bottomMargin = 0
-        
-        // use this variable to set the animation type
-//        overlay.animationType = .fromBottom
     }
     
     //this handler allows the overlay to use the menu button click to remove the current interaction
@@ -106,24 +98,6 @@ class PlayerViewController: UIViewController {
         }
     }
     
-    //this handler moves the focus to the overlay content when the user presses the "down" key
-    //this step is optional - it is useful in this example because the AVPlayerController controls override the "up" key
-    func configureDownButtonHandler() {
-        let menuPressRecognizer = UITapGestureRecognizer()
-        menuPressRecognizer.addTarget(self, action: #selector(downButtonAction(recognizer:)))
-        menuPressRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.downArrow.rawValue)]
-        view.addGestureRecognizer(menuPressRecognizer)
-    }
-        
-    @objc func downButtonAction(recognizer:UITapGestureRecognizer) {
-        let hasInteraction = overlayView?.isDisplayingInteraction() == true
-        if hasInteraction {
-            customPreferredFocusView = overlayView
-            view.setNeedsFocusUpdate()
-            view.updateFocusIfNeeded()
-        }
-    }
-    
     func removePlayer() {
         player?.pause()
         playerController?.view.removeFromSuperview()
@@ -138,10 +112,9 @@ class PlayerViewController: UIViewController {
     
     func startVideoObservers() {
         guard let player = player, let item = player.currentItem else { return }
-        
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemTimeJumped, object: item, queue: OperationQueue.main) { (notification) in
+        NotificationCenter.default.addObserver(forName: AVPlayerItem.timeJumpedNotification, object: item, queue: OperationQueue.main) { (notification) in
             if player.timeControlStatus != .playing {
-                self.overlayView?.videoPaused()
+                self.overlayView?.videoPaused(time: player.currentTime().seconds)
             } else {
                 self.seekTimer?.invalidate()
                 self.seekTimer = Timer.scheduledTimer(withTimeInterval: 0.4, repeats: false, block: { (timer) in
@@ -154,20 +127,55 @@ class PlayerViewController: UIViewController {
             }
         }
     }
+    
 }
 
 extension PlayerViewController: ITGOverlayDelegate {
-    func shrinkPlayerHeight(_ height: CGFloat) {
+    
+    func overlayRequestedVideoTime() {
+        //overlay may require current video time and state so host application needs to provide it
+        guard let player = player else { return }
+        let time = player.currentTime().seconds
+        if player.timeControlStatus == .playing {
+            overlayView?.videoPlaying(time: time)
+        } else {
+            overlayView?.videoPaused(time: time)
+        }
+    }
+    
+    func overlayResizeVideoWidth(activityWidth: CGFloat) {
         //optional - you can adjust the video size when the overlay is showing content
-        playerController?.view.frame.size = CGSize(width: view.frame.width, height: view.frame.height - height)
+        playerController?.view.frame.size = CGSize(width: view.frame.width - activityWidth, height: view.frame.height)
         view.setNeedsFocusUpdate()
         view.updateFocusIfNeeded()
     }
     
-    func applyDefaultPlayerHeight() {
+    func overlayResetVideoWidth() {
+        playerController?.view.frame.size = CGSize(width: initialWidth, height: view.frame.width)
+        view.setNeedsFocusUpdate()
+        view.updateFocusIfNeeded()
+    }
+    
+    func overlayResizeVideoHeight(activityHeight: CGFloat) {
+        //optional - you can adjust the video size when the overlay is showing content
+        playerController?.view.frame.size = CGSize(width: view.frame.width, height: view.frame.height - activityHeight)
+        view.setNeedsFocusUpdate()
+        view.updateFocusIfNeeded()
+    }
+    
+    func overlayResetVideoHeight() {
         playerController?.view.frame.size = CGSize(width: view.frame.width, height: initialHeight)
         view.setNeedsFocusUpdate()
         view.updateFocusIfNeeded()
+    }
+    
+    func overlayReceivedDeeplink(_ link: String) {
+        //custom deeplink may be setup on admin and passed from overlay to host application
+    }
+    
+    func overlayRequestedVideoSeek(time: Double) {
+        guard let player = player else { return }
+        player.seek(to: CMTime(value: CMTimeValue(time), timescale: 1))
     }
     
     func overlayRequestedPause() {
@@ -193,31 +201,5 @@ extension PlayerViewController: ITGOverlayDelegate {
         view.setNeedsFocusUpdate()
         view.updateFocusIfNeeded()
     }
-}
-
-//this delegate is optional, use it only if you want to customize the design elements
-extension PlayerViewController: ITGLayoutDelegate {
-    func customPollView() -> ITGPollView? {
-        return CustomPollView.fromNib()
-    }
     
-    func customRatingView() -> ITGRatingView? {
-        return CustomRatingView.fromNib()
-    }
-    
-    func customTriviaView() -> ITGTriviaView? {
-        return CustomTriviaView.fromNib()
-    }
-    
-    func customNoticeView() -> ITGNotice? {
-        return CustomNotice.fromNib()
-    }
-    
-    func customWikiView() -> ITGWikiView? {
-        return CustomWikiView.fromNib()
-    }
-    
-    func customProductView() -> ITGProductView? {
-        return CustomProductView.fromNib()
-    }
 }

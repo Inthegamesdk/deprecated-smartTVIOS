@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D1E4C93273946EF00125E6E /* CustomInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E4C8D273946EF00125E6E /* CustomInfoView.swift */; };
-		6D1E4C94273946EF00125E6E /* CustomProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E4C8E273946EF00125E6E /* CustomProductView.swift */; };
-		6D1E4C95273946EF00125E6E /* CustomInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E4C8F273946EF00125E6E /* CustomInfoView.xib */; };
-		6D1E4C96273946EF00125E6E /* CustomProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E4C90273946EF00125E6E /* CustomProductView.xib */; };
-		6D1E4C97273946EF00125E6E /* CustomWikiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E4C91273946EF00125E6E /* CustomWikiView.swift */; };
-		6D1E4C98273946EF00125E6E /* CustomWikiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1E4C92273946EF00125E6E /* CustomWikiView.xib */; };
-		6D7B4CCF269C58FC002EBFD3 /* CustomNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7B4CCD269C58FB002EBFD3 /* CustomNotice.swift */; };
-		6D7B4CD0269C58FC002EBFD3 /* CustomNotice.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D7B4CCE269C58FC002EBFD3 /* CustomNotice.xib */; };
+		110007312977F1580083BA1D /* Inthegametv.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1100072E2977E48B0083BA1D /* Inthegametv.xcframework */; };
+		110007322977F1590083BA1D /* Inthegametv.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1100072E2977E48B0083BA1D /* Inthegametv.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		110007332977F15A0083BA1D /* StorketService.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1100072C2977E47B0083BA1D /* StorketService.xcframework */; };
+		110007342977F15A0083BA1D /* StorketService.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1100072C2977E47B0083BA1D /* StorketService.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6D85B1E725E6BC4D00C248DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B1E625E6BC4D00C248DB /* AppDelegate.swift */; };
 		6D85B1EC25E6BC4D00C248DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D85B1EA25E6BC4D00C248DB /* Main.storyboard */; };
 		6D85B1EE25E6BC4F00C248DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D85B1ED25E6BC4F00C248DB /* Assets.xcassets */; };
@@ -23,21 +19,6 @@
 		6D85B20325E6BD9B00C248DB /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B1FF25E6BD9B00C248DB /* ControlsView.swift */; };
 		6D85B20425E6BD9B00C248DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B20025E6BD9B00C248DB /* HomeViewController.swift */; };
 		6D85B20525E6BD9B00C248DB /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B20125E6BD9B00C248DB /* PlayerViewController.swift */; };
-		6DB72ED926E8D0B60008B4C2 /* Pods_InthegameTVExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE06CD23D15B4BADDEF8EED5 /* Pods_InthegameTVExample.framework */; };
-		6DE93FC92604C567005AB3A9 /* Inthegametv.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE93FC72604C562005AB3A9 /* Inthegametv.xcframework */; };
-		6DE93FCA2604C567005AB3A9 /* Inthegametv.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE93FC72604C562005AB3A9 /* Inthegametv.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6DE93FD82604CB1C005AB3A9 /* CustomTriviaAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93FCC2604CB1C005AB3A9 /* CustomTriviaAnswerView.xib */; };
-		6DE93FD92604CB1C005AB3A9 /* CustomPollAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93FCD2604CB1C005AB3A9 /* CustomPollAnswerView.swift */; };
-		6DE93FDA2604CB1C005AB3A9 /* CustomRatingAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93FCE2604CB1C005AB3A9 /* CustomRatingAnswerView.xib */; };
-		6DE93FDB2604CB1C005AB3A9 /* CustomPollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93FCF2604CB1C005AB3A9 /* CustomPollView.swift */; };
-		6DE93FDC2604CB1C005AB3A9 /* CustomRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93FD02604CB1C005AB3A9 /* CustomRatingView.swift */; };
-		6DE93FDD2604CB1C005AB3A9 /* CustomRatingAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93FD12604CB1C005AB3A9 /* CustomRatingAnswerView.swift */; };
-		6DE93FDE2604CB1C005AB3A9 /* CustomTriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93FD22604CB1C005AB3A9 /* CustomTriviaView.swift */; };
-		6DE93FDF2604CB1C005AB3A9 /* CustomPollAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93FD32604CB1C005AB3A9 /* CustomPollAnswerView.xib */; };
-		6DE93FE02604CB1C005AB3A9 /* CustomTriviaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93FD42604CB1C005AB3A9 /* CustomTriviaView.xib */; };
-		6DE93FE12604CB1C005AB3A9 /* CustomTriviaAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE93FD52604CB1C005AB3A9 /* CustomTriviaAnswerView.swift */; };
-		6DE93FE22604CB1C005AB3A9 /* CustomPollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93FD62604CB1C005AB3A9 /* CustomPollView.xib */; };
-		6DE93FE32604CB1C005AB3A9 /* CustomRatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE93FD72604CB1C005AB3A9 /* CustomRatingView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,7 +28,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6DE93FCA2604C567005AB3A9 /* Inthegametv.xcframework in Embed Frameworks */,
+				110007342977F15A0083BA1D /* StorketService.xcframework in Embed Frameworks */,
+				110007322977F1590083BA1D /* Inthegametv.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,16 +37,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		41435927253510E3C5218E07 /* Pods-InthegameTVExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InthegameTVExample.release.xcconfig"; path = "Target Support Files/Pods-InthegameTVExample/Pods-InthegameTVExample.release.xcconfig"; sourceTree = "<group>"; };
-		571602FAD86980CE2D50B628 /* Pods-InthegameTVExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InthegameTVExample.debug.xcconfig"; path = "Target Support Files/Pods-InthegameTVExample/Pods-InthegameTVExample.debug.xcconfig"; sourceTree = "<group>"; };
-		6D1E4C8D273946EF00125E6E /* CustomInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInfoView.swift; sourceTree = "<group>"; };
-		6D1E4C8E273946EF00125E6E /* CustomProductView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomProductView.swift; sourceTree = "<group>"; };
-		6D1E4C8F273946EF00125E6E /* CustomInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInfoView.xib; sourceTree = "<group>"; };
-		6D1E4C90273946EF00125E6E /* CustomProductView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomProductView.xib; sourceTree = "<group>"; };
-		6D1E4C91273946EF00125E6E /* CustomWikiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWikiView.swift; sourceTree = "<group>"; };
-		6D1E4C92273946EF00125E6E /* CustomWikiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomWikiView.xib; sourceTree = "<group>"; };
-		6D7B4CCD269C58FB002EBFD3 /* CustomNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNotice.swift; sourceTree = "<group>"; };
-		6D7B4CCE269C58FC002EBFD3 /* CustomNotice.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNotice.xib; sourceTree = "<group>"; };
+		1100072C2977E47B0083BA1D /* StorketService.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = StorketService.xcframework; sourceTree = "<group>"; };
+		1100072E2977E48B0083BA1D /* Inthegametv.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Inthegametv.xcframework; sourceTree = "<group>"; };
 		6D85B1E325E6BC4D00C248DB /* InthegameTVExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InthegameTVExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D85B1E625E6BC4D00C248DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D85B1EB25E6BC4D00C248DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,20 +49,6 @@
 		6D85B1FF25E6BD9B00C248DB /* ControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 		6D85B20025E6BD9B00C248DB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6D85B20125E6BD9B00C248DB /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
-		6DE93FC72604C562005AB3A9 /* Inthegametv.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Inthegametv.xcframework; sourceTree = "<group>"; };
-		6DE93FCC2604CB1C005AB3A9 /* CustomTriviaAnswerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTriviaAnswerView.xib; sourceTree = "<group>"; };
-		6DE93FCD2604CB1C005AB3A9 /* CustomPollAnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPollAnswerView.swift; sourceTree = "<group>"; };
-		6DE93FCE2604CB1C005AB3A9 /* CustomRatingAnswerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRatingAnswerView.xib; sourceTree = "<group>"; };
-		6DE93FCF2604CB1C005AB3A9 /* CustomPollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPollView.swift; sourceTree = "<group>"; };
-		6DE93FD02604CB1C005AB3A9 /* CustomRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRatingView.swift; sourceTree = "<group>"; };
-		6DE93FD12604CB1C005AB3A9 /* CustomRatingAnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRatingAnswerView.swift; sourceTree = "<group>"; };
-		6DE93FD22604CB1C005AB3A9 /* CustomTriviaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTriviaView.swift; sourceTree = "<group>"; };
-		6DE93FD32604CB1C005AB3A9 /* CustomPollAnswerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPollAnswerView.xib; sourceTree = "<group>"; };
-		6DE93FD42604CB1C005AB3A9 /* CustomTriviaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTriviaView.xib; sourceTree = "<group>"; };
-		6DE93FD52604CB1C005AB3A9 /* CustomTriviaAnswerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTriviaAnswerView.swift; sourceTree = "<group>"; };
-		6DE93FD62604CB1C005AB3A9 /* CustomPollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPollView.xib; sourceTree = "<group>"; };
-		6DE93FD72604CB1C005AB3A9 /* CustomRatingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRatingView.xib; sourceTree = "<group>"; };
-		AE06CD23D15B4BADDEF8EED5 /* Pods_InthegameTVExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InthegameTVExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,29 +56,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB72ED926E8D0B60008B4C2 /* Pods_InthegameTVExample.framework in Frameworks */,
-				6DE93FC92604C567005AB3A9 /* Inthegametv.xcframework in Frameworks */,
+				110007332977F15A0083BA1D /* StorketService.xcframework in Frameworks */,
+				110007312977F1580083BA1D /* Inthegametv.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5241F3EE5D36E26E4A9ECCCF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AE06CD23D15B4BADDEF8EED5 /* Pods_InthegameTVExample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		6D85B1DA25E6BC4D00C248DB = {
 			isa = PBXGroup;
 			children = (
 				6D85B1E525E6BC4D00C248DB /* InthegameTVExample */,
 				6D85B1E425E6BC4D00C248DB /* Products */,
-				C963F6182A4CAF75FA6A7262 /* Pods */,
-				5241F3EE5D36E26E4A9ECCCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,50 +88,14 @@
 				6D85B1FF25E6BD9B00C248DB /* ControlsView.swift */,
 				6D85B20025E6BD9B00C248DB /* HomeViewController.swift */,
 				6D85B20125E6BD9B00C248DB /* PlayerViewController.swift */,
-				6DE93FCB2604CB1C005AB3A9 /* Custom Views */,
 				6D85B1EA25E6BC4D00C248DB /* Main.storyboard */,
 				6D85B1ED25E6BC4F00C248DB /* Assets.xcassets */,
 				6D85B1EF25E6BC4F00C248DB /* LaunchScreen.storyboard */,
 				6D85B1F225E6BC4F00C248DB /* Info.plist */,
-				6DE93FC72604C562005AB3A9 /* Inthegametv.xcframework */,
+				1100072E2977E48B0083BA1D /* Inthegametv.xcframework */,
+				1100072C2977E47B0083BA1D /* StorketService.xcframework */,
 			);
 			path = InthegameTVExample;
-			sourceTree = "<group>";
-		};
-		6DE93FCB2604CB1C005AB3A9 /* Custom Views */ = {
-			isa = PBXGroup;
-			children = (
-				6DE93FCF2604CB1C005AB3A9 /* CustomPollView.swift */,
-				6DE93FD62604CB1C005AB3A9 /* CustomPollView.xib */,
-				6DE93FCD2604CB1C005AB3A9 /* CustomPollAnswerView.swift */,
-				6DE93FD32604CB1C005AB3A9 /* CustomPollAnswerView.xib */,
-				6DE93FD02604CB1C005AB3A9 /* CustomRatingView.swift */,
-				6DE93FD72604CB1C005AB3A9 /* CustomRatingView.xib */,
-				6DE93FD12604CB1C005AB3A9 /* CustomRatingAnswerView.swift */,
-				6DE93FCE2604CB1C005AB3A9 /* CustomRatingAnswerView.xib */,
-				6DE93FD22604CB1C005AB3A9 /* CustomTriviaView.swift */,
-				6DE93FD42604CB1C005AB3A9 /* CustomTriviaView.xib */,
-				6DE93FD52604CB1C005AB3A9 /* CustomTriviaAnswerView.swift */,
-				6DE93FCC2604CB1C005AB3A9 /* CustomTriviaAnswerView.xib */,
-				6D1E4C8D273946EF00125E6E /* CustomInfoView.swift */,
-				6D1E4C8F273946EF00125E6E /* CustomInfoView.xib */,
-				6D1E4C8E273946EF00125E6E /* CustomProductView.swift */,
-				6D1E4C90273946EF00125E6E /* CustomProductView.xib */,
-				6D1E4C91273946EF00125E6E /* CustomWikiView.swift */,
-				6D1E4C92273946EF00125E6E /* CustomWikiView.xib */,
-				6D7B4CCD269C58FB002EBFD3 /* CustomNotice.swift */,
-				6D7B4CCE269C58FC002EBFD3 /* CustomNotice.xib */,
-			);
-			path = "Custom Views";
-			sourceTree = "<group>";
-		};
-		C963F6182A4CAF75FA6A7262 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				571602FAD86980CE2D50B628 /* Pods-InthegameTVExample.debug.xcconfig */,
-				41435927253510E3C5218E07 /* Pods-InthegameTVExample.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,12 +105,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D85B1F525E6BC4F00C248DB /* Build configuration list for PBXNativeTarget "InthegameTVExample" */;
 			buildPhases = (
-				1B390F77D00AEF3046BA9F35 /* [CP] Check Pods Manifest.lock */,
 				6D85B1DF25E6BC4D00C248DB /* Sources */,
 				6D85B1E025E6BC4D00C248DB /* Frameworks */,
 				6D85B1E125E6BC4D00C248DB /* Resources */,
 				6D85B1FD25E6BCFC00C248DB /* Embed Frameworks */,
-				D30AFB78BF98769C4E20B1E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,65 +156,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DE93FE22604CB1C005AB3A9 /* CustomPollView.xib in Resources */,
-				6DE93FD82604CB1C005AB3A9 /* CustomTriviaAnswerView.xib in Resources */,
-				6DE93FDA2604CB1C005AB3A9 /* CustomRatingAnswerView.xib in Resources */,
-				6D1E4C95273946EF00125E6E /* CustomInfoView.xib in Resources */,
 				6D85B1F125E6BC4F00C248DB /* LaunchScreen.storyboard in Resources */,
-				6D7B4CD0269C58FC002EBFD3 /* CustomNotice.xib in Resources */,
-				6DE93FE02604CB1C005AB3A9 /* CustomTriviaView.xib in Resources */,
 				6D85B1EE25E6BC4F00C248DB /* Assets.xcassets in Resources */,
-				6DE93FDF2604CB1C005AB3A9 /* CustomPollAnswerView.xib in Resources */,
-				6D1E4C96273946EF00125E6E /* CustomProductView.xib in Resources */,
 				6D85B1EC25E6BC4D00C248DB /* Main.storyboard in Resources */,
-				6D1E4C98273946EF00125E6E /* CustomWikiView.xib in Resources */,
-				6DE93FE32604CB1C005AB3A9 /* CustomRatingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1B390F77D00AEF3046BA9F35 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-InthegameTVExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D30AFB78BF98769C4E20B1E5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InthegameTVExample/Pods-InthegameTVExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InthegameTVExample/Pods-InthegameTVExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InthegameTVExample/Pods-InthegameTVExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D85B1DF25E6BC4D00C248DB /* Sources */ = {
@@ -310,20 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D85B20425E6BD9B00C248DB /* HomeViewController.swift in Sources */,
-				6DE93FDD2604CB1C005AB3A9 /* CustomRatingAnswerView.swift in Sources */,
 				6D85B20325E6BD9B00C248DB /* ControlsView.swift in Sources */,
-				6D1E4C94273946EF00125E6E /* CustomProductView.swift in Sources */,
-				6DE93FD92604CB1C005AB3A9 /* CustomPollAnswerView.swift in Sources */,
-				6DE93FDB2604CB1C005AB3A9 /* CustomPollView.swift in Sources */,
-				6DE93FDC2604CB1C005AB3A9 /* CustomRatingView.swift in Sources */,
-				6DE93FE12604CB1C005AB3A9 /* CustomTriviaAnswerView.swift in Sources */,
-				6DE93FDE2604CB1C005AB3A9 /* CustomTriviaView.swift in Sources */,
 				6D85B20225E6BD9B00C248DB /* AVPlayerView.swift in Sources */,
-				6D1E4C97273946EF00125E6E /* CustomWikiView.swift in Sources */,
 				6D85B1E725E6BC4D00C248DB /* AppDelegate.swift in Sources */,
-				6D7B4CCF269C58FC002EBFD3 /* CustomNotice.swift in Sources */,
 				6D85B20525E6BD9B00C248DB /* PlayerViewController.swift in Sources */,
-				6D1E4C93273946EF00125E6E /* CustomInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,12 +317,11 @@
 		};
 		6D85B1F625E6BC4F00C248DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 571602FAD86980CE2D50B628 /* Pods-InthegameTVExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 31;
+				CURRENT_PROJECT_VERSION = 65;
 				DEVELOPMENT_TEAM = 6KKS6W5LF2;
 				EXCLUDED_ARCHS = "";
 				"EXCLUDED_ARCHS[sdk=appletvsimulator*]" = "arm64 arm64-apple-tvos";
@@ -485,7 +334,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.2;
+				MARKETING_VERSION = 2.0.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syncedapps.InthegameTVExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -497,12 +346,11 @@
 		};
 		6D85B1F725E6BC4F00C248DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41435927253510E3C5218E07 /* Pods-InthegameTVExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 31;
+				CURRENT_PROJECT_VERSION = 65;
 				DEVELOPMENT_TEAM = 6KKS6W5LF2;
 				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -514,7 +362,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.2;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.syncedapps.InthegameTVExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

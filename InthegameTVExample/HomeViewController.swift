@@ -7,11 +7,8 @@
 
 import UIKit
 import Inthegametv
+
 class HomeViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        ITGOverlayView.resetUser()
-    }
 }
 
