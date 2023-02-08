@@ -22,6 +22,7 @@ public protocol StorketDelegate : ObjectiveC.NSObject {
 public enum StorketType : Swift.String {
   case storket
   case chat
+  case stats
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {

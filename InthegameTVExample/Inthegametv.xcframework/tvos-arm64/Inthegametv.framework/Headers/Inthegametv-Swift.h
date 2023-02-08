@@ -259,8 +259,6 @@ using UInt = size_t;
 @class NSCoder;
 @class UIFocusUpdateContext;
 @class UIFocusAnimationCoordinator;
-@class UIPress;
-@class UIPressesEvent;
 
 SWIFT_CLASS("_TtC11Inthegametv13FocusTvButton")
 @interface FocusTvButton : UIButton
@@ -270,8 +268,9 @@ SWIFT_CLASS("_TtC11Inthegametv13FocusTvButton")
 @property (nonatomic, strong) IBInspectable UIColor * _Nullable focusedBackgroundEndColor;
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull normalBackgroundColor;
 @property (nonatomic, strong) IBInspectable UIColor * _Nullable normalBackgroundEndColor;
-@property (nonatomic) IBInspectable CGFloat focusedScaleFactor;
 @property (nonatomic) IBInspectable NSTimeInterval animationDuration;
+@property (nonatomic) IBInspectable CGFloat pressedScale;
+@property (nonatomic) IBInspectable CGFloat pressedAlpha;
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull focusedTitleColor;
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull normalTitleColor;
 @property (nonatomic) IBInspectable CGPoint gradientStartPoint;
@@ -291,9 +290,7 @@ SWIFT_CLASS("_TtC11Inthegametv13FocusTvButton")
 - (void)didMoveToSuperview;
 - (void)layoutSubviews;
 - (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
-- (void)pressesBegan:(NSSet<UIPress *> * _Nonnull)presses withEvent:(UIPressesEvent * _Nullable)event;
-- (void)pressesCancelled:(NSSet<UIPress *> * _Nonnull)presses withEvent:(UIPressesEvent * _Nullable)event;
-- (void)pressesEnded:(NSSet<UIPress *> * _Nonnull)presses withEvent:(UIPressesEvent * _Nullable)event;
+- (void)sendActionsForControlEvents:(UIControlEvents)controlEvents;
 @end
 
 
@@ -320,6 +317,7 @@ SWIFT_CLASS("_TtC11Inthegametv13ITGAnswerView")
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageLeadeingToMainImage;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageVerticalCenterToMainImage;
 - (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
+- (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -358,11 +356,9 @@ SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 - (void)didMoveToWindow;
 - (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
-- (void)layoutSubviews;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 
@@ -393,12 +389,12 @@ SWIFT_CLASS("_TtC11Inthegametv11ITGShopView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class UIScrollView;
 
 @interface ITGShopView (SWIFT_EXTENSION(Inthegametv)) <UIScrollViewDelegate>
 - (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
 @end
+
 
 @class UITableView;
 @class NSIndexPath;

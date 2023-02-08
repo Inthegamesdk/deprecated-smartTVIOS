@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		110007312977F1580083BA1D /* Inthegametv.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1100072E2977E48B0083BA1D /* Inthegametv.xcframework */; };
-		110007322977F1590083BA1D /* Inthegametv.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1100072E2977E48B0083BA1D /* Inthegametv.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		110007332977F15A0083BA1D /* StorketService.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1100072C2977E47B0083BA1D /* StorketService.xcframework */; };
-		110007342977F15A0083BA1D /* StorketService.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1100072C2977E47B0083BA1D /* StorketService.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		11C5E8132993D8050028862A /* StorketService.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C5E8122993D8050028862A /* StorketService.xcframework */; };
+		11C5E8152993D80D0028862A /* Inthegametv.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C5E8142993D80D0028862A /* Inthegametv.xcframework */; };
 		6D85B1E725E6BC4D00C248DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B1E625E6BC4D00C248DB /* AppDelegate.swift */; };
 		6D85B1EC25E6BC4D00C248DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D85B1EA25E6BC4D00C248DB /* Main.storyboard */; };
 		6D85B1EE25E6BC4F00C248DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D85B1ED25E6BC4F00C248DB /* Assets.xcassets */; };
 		6D85B1F125E6BC4F00C248DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D85B1EF25E6BC4F00C248DB /* LaunchScreen.storyboard */; };
 		6D85B20225E6BD9B00C248DB /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B1FE25E6BD9B00C248DB /* AVPlayerView.swift */; };
-		6D85B20325E6BD9B00C248DB /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B1FF25E6BD9B00C248DB /* ControlsView.swift */; };
 		6D85B20425E6BD9B00C248DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B20025E6BD9B00C248DB /* HomeViewController.swift */; };
 		6D85B20525E6BD9B00C248DB /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B20125E6BD9B00C248DB /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,8 +25,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				110007342977F15A0083BA1D /* StorketService.xcframework in Embed Frameworks */,
-				110007322977F1590083BA1D /* Inthegametv.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,8 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1100072C2977E47B0083BA1D /* StorketService.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = StorketService.xcframework; sourceTree = "<group>"; };
-		1100072E2977E48B0083BA1D /* Inthegametv.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Inthegametv.xcframework; sourceTree = "<group>"; };
+		11C5E8122993D8050028862A /* StorketService.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = StorketService.xcframework; sourceTree = "<group>"; };
+		11C5E8142993D80D0028862A /* Inthegametv.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Inthegametv.xcframework; sourceTree = "<group>"; };
 		6D85B1E325E6BC4D00C248DB /* InthegameTVExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InthegameTVExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D85B1E625E6BC4D00C248DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D85B1EB25E6BC4D00C248DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +41,6 @@
 		6D85B1F025E6BC4F00C248DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D85B1F225E6BC4F00C248DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D85B1FE25E6BD9B00C248DB /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
-		6D85B1FF25E6BD9B00C248DB /* ControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 		6D85B20025E6BD9B00C248DB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6D85B20125E6BD9B00C248DB /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,8 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				110007332977F15A0083BA1D /* StorketService.xcframework in Frameworks */,
-				110007312977F1580083BA1D /* Inthegametv.xcframework in Frameworks */,
+				11C5E8152993D80D0028862A /* Inthegametv.xcframework in Frameworks */,
+				11C5E8132993D8050028862A /* StorketService.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,15 +79,14 @@
 			children = (
 				6D85B1E625E6BC4D00C248DB /* AppDelegate.swift */,
 				6D85B1FE25E6BD9B00C248DB /* AVPlayerView.swift */,
-				6D85B1FF25E6BD9B00C248DB /* ControlsView.swift */,
 				6D85B20025E6BD9B00C248DB /* HomeViewController.swift */,
 				6D85B20125E6BD9B00C248DB /* PlayerViewController.swift */,
 				6D85B1EA25E6BC4D00C248DB /* Main.storyboard */,
 				6D85B1ED25E6BC4F00C248DB /* Assets.xcassets */,
 				6D85B1EF25E6BC4F00C248DB /* LaunchScreen.storyboard */,
 				6D85B1F225E6BC4F00C248DB /* Info.plist */,
-				1100072E2977E48B0083BA1D /* Inthegametv.xcframework */,
-				1100072C2977E47B0083BA1D /* StorketService.xcframework */,
+				11C5E8122993D8050028862A /* StorketService.xcframework */,
+				11C5E8142993D80D0028862A /* Inthegametv.xcframework */,
 			);
 			path = InthegameTVExample;
 			sourceTree = "<group>";
@@ -170,7 +163,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D85B20425E6BD9B00C248DB /* HomeViewController.swift in Sources */,
-				6D85B20325E6BD9B00C248DB /* ControlsView.swift in Sources */,
 				6D85B20225E6BD9B00C248DB /* AVPlayerView.swift in Sources */,
 				6D85B1E725E6BC4D00C248DB /* AppDelegate.swift in Sources */,
 				6D85B20525E6BD9B00C248DB /* PlayerViewController.swift in Sources */,

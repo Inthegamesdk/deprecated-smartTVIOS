@@ -15,6 +15,7 @@ let accountName = "cellcom"
 let accountId = "631da52247f9e460d1039022"
 let language = "en"
 let videoURL = "https://media2.inthegame.io/uploads/automation_demo.mp4"
+let environment = "stage"
 
 class PlayerViewController: UIViewController {
 
@@ -76,7 +77,7 @@ class PlayerViewController: UIViewController {
         containerView.addSubview(overlay)
         
         //load your channel to start up the ITG system
-        overlay.load(channelSlug: channelSlug, accountId: accountId, environment: .stage, delegate: self, language: language, foreignId: nil)
+        overlay.load(channelSlug: channelSlug, accountId: accountId, environment: ITGEnvironment(envName: environment), delegate: self, language: language, foreignId: nil)
         overlayView = overlay
     }
     
