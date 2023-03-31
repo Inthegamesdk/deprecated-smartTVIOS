@@ -17,6 +17,8 @@ public enum ITGMenuItem : Swift.String, Swift.CaseIterable, Swift.Decodable {
   case shop
   case chat
   case stats
+  case `extension`
+  case debug
   public init?(rawValue: Swift.String)
   public typealias AllCases = [Inthegametv.ITGMenuItem]
   public typealias RawValue = Swift.String
@@ -27,6 +29,58 @@ public enum ITGMenuItem : Swift.String, Swift.CaseIterable, Swift.Decodable {
     get
   }
 }
+public struct User : Swift.Codable {
+  public var name: Swift.String {
+    get
+  }
+  public var email: Swift.String {
+    get
+  }
+  public var level: Swift.Int {
+    get
+  }
+  public var thumbnail: Swift.String? {
+    get
+  }
+  public let id: Swift.String
+  public var stats: [Inthegametv.UserChannelPoints]? {
+    get
+  }
+  public var activities: [Inthegametv.UserActivity]? {
+    get
+  }
+  public var visibleActivities: Inthegametv.UserPermissions {
+    get
+  }
+  public let createdAt: Foundation.Date
+  public let language: Swift.String
+  public let foreignId: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct UserChannelPoints : Swift.Codable {
+  public let channelSlug: Swift.String
+  public var coins: Swift.Int {
+    get
+  }
+  public var expoints: Swift.Int {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct UserActivity : Swift.Codable {
+  public let activityId: Swift.String
+  public let activityType: Inthegametv.ModuleType
+  public let channelSlug: Swift.String
+  public let answer: Swift.String
+  public let coins: Swift.Int?
+  public let expoints: Swift.Int
+  public let isCorrect: Swift.Bool?
+  public let correctAnswer: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
 public enum ChannelDirection : Swift.String, Swift.Codable {
   case ltr
   case rtl
@@ -35,6 +89,68 @@ public enum ChannelDirection : Swift.String, Swift.Codable {
   public var rawValue: Swift.String {
     get
   }
+}
+public enum AnalyticsEventType : Swift.String {
+  case view
+  case engage
+  case close
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ModuleType : Swift.String, Swift.Codable {
+  case poll
+  case prediction
+  case rating
+  case quiz
+  case wiki
+  case product
+  case module
+  case sequence
+  case account
+  case leaderboard
+  case shop
+  case chat
+  case stats
+  case other
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct UserPermissions : Swift.Codable {
+  public let rating: Swift.Bool
+  public let prediction: Swift.Bool
+  public let product: Swift.Bool
+  public let quiz: Swift.Bool
+  public let poll: Swift.Bool
+  public let wiki: Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct LeaderboardResponse : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum LeaderboardSorting : Swift.String, Swift.Decodable {
+  case expoints
+  case coins
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct AnalyticsInfo {
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class PassthroughView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class ITGStorketHelper : ObjectiveC.NSObject {
   public func connect(accountId: Swift.String, channelSlug: Swift.String, environment: Inthegametv.ITGEnvironment, token: Swift.String)
@@ -61,6 +177,9 @@ public protocol ITGOverlayDelegate : AnyObject {
   func overlayResetVideoHeight()
   func overlayReceivedDeeplink(_ link: Swift.String)
   func overlayRequestedVideoSeek(time: Swift.Double)
+  func overlayRequestedVideoResolution() -> Swift.String
+  func overlayDidProcessAnalyticEvent(info: Inthegametv.AnalyticsInfo, type: Inthegametv.AnalyticsEventType)
+  func userState(_ user: Inthegametv.User)
 }
 public enum ITGAnimationType {
   case fromRight
@@ -112,13 +231,18 @@ public enum ITGContent {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredFocusEnvironments: [UIKit.UIFocusEnvironment] {
     @objc get
   }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, accountId: Swift.String, environment: Inthegametv.ITGEnvironment, delegate: Inthegametv.ITGOverlayDelegate?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) public func load(accountId: Swift.String, environment: Inthegametv.ITGEnvironment, delegate: Inthegametv.ITGOverlayDelegate?, foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, accountId: Swift.String, environment: Inthegametv.ITGEnvironment, delegate: Inthegametv.ITGOverlayDelegate?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) public func getLeaderboard(_ page: Swift.Int, limit: Swift.Int, period: Inthegametv.LeaderboardPeriod, leaderboardSorting: Inthegametv.LeaderboardSorting, completion: @escaping (Inthegametv.LeaderboardResponse?, Swift.Error?) -> ())
   @_Concurrency.MainActor(unsafe) public func resetUser()
   @_Concurrency.MainActor(unsafe) public func closeInteractionIfNeeded() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func isDisplayingInteraction() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func isDisplayingSidebar() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func videoPaused(time: Swift.Double)
   @_Concurrency.MainActor(unsafe) public func videoPlaying(time: Swift.Double)
   @_Concurrency.MainActor(unsafe) public func setLiveMode(enabled: Swift.Bool)
@@ -128,18 +252,18 @@ public enum ITGContent {
   @_Concurrency.MainActor(unsafe) public func openShop()
   @_Concurrency.MainActor(unsafe) public func openChat()
   @_Concurrency.MainActor(unsafe) public func openStats()
+  @_Concurrency.MainActor(unsafe) public func openExtension()
   @_Concurrency.MainActor(unsafe) public func closeMenu()
   @_Concurrency.MainActor(unsafe) public func closeAccount()
   @_Concurrency.MainActor(unsafe) public func closeLeaderboard()
   @_Concurrency.MainActor(unsafe) public func closeShop()
   @_Concurrency.MainActor(unsafe) public func closeChat()
   @_Concurrency.MainActor(unsafe) public func closeStats()
+  @_Concurrency.MainActor(unsafe) public func closeExtension()
   @_Concurrency.MainActor(unsafe) public func isMenuVisible() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func currentContent() -> [Inthegametv.ITGContent]
   @_Concurrency.MainActor(unsafe) public func currentMenuPage() -> Inthegametv.ITGMenuItem?
   @_Concurrency.MainActor(unsafe) public func closeAll()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 extension Inthegametv.ITGOverlayView {
@@ -170,23 +294,32 @@ extension Inthegametv.ITGOverlayView {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var secondaryImageTrailingToButton: UIKit.NSLayoutConstraint?
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var secondaryImageLeadeingToMainImage: UIKit.NSLayoutConstraint?
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var secondaryImageVerticalCenterToMainImage: UIKit.NSLayoutConstraint?
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var pollPercentageLabelLeadingConstraint: UIKit.NSLayoutConstraint?
+  @_Concurrency.MainActor(unsafe) public var animationDuration: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var pressedScale: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var pressedAlpha: CoreFoundation.CGFloat
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func awakeFromNib()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGNotice : UIKit.UIView, Inthegametv.NibView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredFocusEnvironments: [UIKit.UIFocusEnvironment] {
-    @objc get
+public enum LeaderboardPeriod : Swift.String, Swift.CustomStringConvertible, Swift.CaseIterable {
+  case alltime
+  case week
+  case day
+  public var description: Swift.String {
+    get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
-  @objc @IBAction @_Concurrency.MainActor(unsafe) public func actionClose(_ sender: Any?)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [Inthegametv.LeaderboardPeriod]
+  public typealias RawValue = Swift.String
+  public static var allCases: [Inthegametv.LeaderboardPeriod] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers public class ITGTool {
   public static func getVideoURL(channelSlug: Swift.String, accountId: Swift.String, language: Swift.String, environment: Inthegametv.ITGEnvironment, completion: @escaping (Swift.String?, Swift.Error?) -> ())
@@ -221,26 +354,6 @@ extension UIKit.UIColor {
   convenience public init?(hex: Swift.String)
   convenience public init?(hex: Swift.String, opacity: CoreFoundation.CGFloat)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGShopView : UIKit.UIView, Inthegametv.NibView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredFocusEnvironments: [UIKit.UIFocusEnvironment] {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func awakeFromNib()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-extension Inthegametv.ITGShopView : UIKit.UIScrollViewDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
-}
-extension Inthegametv.ITGShopView : UIKit.UITableViewDataSource {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-}
-extension Inthegametv.ITGShopView : UIKit.UITableViewDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func indexPathForPreferredFocusedView(in tableView: UIKit.UITableView) -> Foundation.IndexPath?
-}
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class FocusTvButton : UIKit.UIButton {
   @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var normalFont: UIKit.UIFont {
     @objc get
@@ -266,9 +379,9 @@ extension Inthegametv.ITGShopView : UIKit.UITableViewDelegate {
     @objc get
     @objc set
   }
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var animationDuration: Swift.Double
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var pressedScale: CoreFoundation.CGFloat
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var pressedAlpha: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var animationDuration: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var pressedScale: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var pressedAlpha: CoreFoundation.CGFloat
   @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var focusedTitleColor: UIKit.UIColor {
     @objc get
     @objc set
@@ -340,7 +453,19 @@ extension Inthegametv.ITGMenuItem : Swift.RawRepresentable {}
 extension Inthegametv.ChannelDirection : Swift.Equatable {}
 extension Inthegametv.ChannelDirection : Swift.Hashable {}
 extension Inthegametv.ChannelDirection : Swift.RawRepresentable {}
+extension Inthegametv.AnalyticsEventType : Swift.Equatable {}
+extension Inthegametv.AnalyticsEventType : Swift.Hashable {}
+extension Inthegametv.AnalyticsEventType : Swift.RawRepresentable {}
+extension Inthegametv.ModuleType : Swift.Equatable {}
+extension Inthegametv.ModuleType : Swift.Hashable {}
+extension Inthegametv.ModuleType : Swift.RawRepresentable {}
+extension Inthegametv.LeaderboardSorting : Swift.Equatable {}
+extension Inthegametv.LeaderboardSorting : Swift.Hashable {}
+extension Inthegametv.LeaderboardSorting : Swift.RawRepresentable {}
 extension Inthegametv.ITGAnimationType : Swift.Equatable {}
 extension Inthegametv.ITGAnimationType : Swift.Hashable {}
 extension Inthegametv.ITGContent : Swift.Equatable {}
 extension Inthegametv.ITGContent : Swift.Hashable {}
+extension Inthegametv.LeaderboardPeriod : Swift.Equatable {}
+extension Inthegametv.LeaderboardPeriod : Swift.Hashable {}
+extension Inthegametv.LeaderboardPeriod : Swift.RawRepresentable {}

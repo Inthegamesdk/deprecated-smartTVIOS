@@ -1517,14 +1517,14 @@
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketServiceManager.swift",
       "kind": "StringLiteral",
-      "offset": 810,
+      "offset": 825,
       "length": 41,
       "value": "\"EEE',' dd' 'MMM' 'yyyy HH':'mm':'ss zzz\""
     },
     {
       "filePath": "\/Users\/daedalus\/Documents\/inthegame\/Storket\/Storket\/StorketServiceManager.swift",
       "kind": "StringLiteral",
-      "offset": 898,
+      "offset": 913,
       "length": 7,
       "value": "\"en_US\""
     }

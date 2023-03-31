@@ -268,9 +268,6 @@ SWIFT_CLASS("_TtC11Inthegametv13FocusTvButton")
 @property (nonatomic, strong) IBInspectable UIColor * _Nullable focusedBackgroundEndColor;
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull normalBackgroundColor;
 @property (nonatomic, strong) IBInspectable UIColor * _Nullable normalBackgroundEndColor;
-@property (nonatomic) IBInspectable NSTimeInterval animationDuration;
-@property (nonatomic) IBInspectable CGFloat pressedScale;
-@property (nonatomic) IBInspectable CGFloat pressedAlpha;
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull focusedTitleColor;
 @property (nonatomic, strong) IBInspectable UIColor * _Nonnull normalTitleColor;
 @property (nonatomic) IBInspectable CGPoint gradientStartPoint;
@@ -316,6 +313,7 @@ SWIFT_CLASS("_TtC11Inthegametv13ITGAnswerView")
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageTrailingToButton;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageLeadeingToMainImage;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable secondaryImageVerticalCenterToMainImage;
+@property (nonatomic, strong) IBOutlet NSLayoutConstraint * _Nullable pollPercentageLabelLeadingConstraint;
 - (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -334,31 +332,19 @@ SWIFT_CLASS("_TtC11Inthegametv11ITGInfoView")
 @end
 
 
-
-SWIFT_CLASS("_TtC11Inthegametv9ITGNotice")
-@interface ITGNotice : UIView
-@property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
-- (void)awakeFromNib;
-- (void)didMoveToSuperview;
-- (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
-- (IBAction)actionClose:(id _Nullable)sender;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
 @class UIEvent;
 
 SWIFT_CLASS("_TtC11Inthegametv14ITGOverlayView")
 @interface ITGOverlayView : UIView
 @property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)didMoveToWindow;
 - (void)didUpdateFocusInContext:(UIFocusUpdateContext * _Nonnull)context withAnimationCoordinator:(UIFocusAnimationCoordinator * _Nonnull)coordinator;
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 
@@ -381,43 +367,20 @@ SWIFT_CLASS("_TtC11Inthegametv19ITGRatingAnswerView")
 
 
 
-SWIFT_CLASS("_TtC11Inthegametv11ITGShopView")
-@interface ITGShopView : UIView
-@property (nonatomic, readonly, copy) NSArray<id <UIFocusEnvironment>> * _Nonnull preferredFocusEnvironments;
-- (void)awakeFromNib;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIScrollView;
-
-@interface ITGShopView (SWIFT_EXTENSION(Inthegametv)) <UIScrollViewDelegate>
-- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
-@end
-
-
-@class UITableView;
-@class NSIndexPath;
-@class UITableViewCell;
-
-@interface ITGShopView (SWIFT_EXTENSION(Inthegametv)) <UITableViewDataSource>
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface ITGShopView (SWIFT_EXTENSION(Inthegametv)) <UITableViewDelegate>
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (NSIndexPath * _Nullable)indexPathForPreferredFocusedViewInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
 SWIFT_CLASS("_TtC11Inthegametv16ITGStorketHelper")
 @interface ITGStorketHelper : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+
+
+SWIFT_CLASS("_TtC11Inthegametv15PassthroughView")
+@interface PassthroughView : UIView
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class UIImage;
 
@@ -428,6 +391,7 @@ SWIFT_CLASS("_TtC11Inthegametv15SpriteImageView")
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage SWIFT_UNAVAILABLE;
 @end
+
 
 
 

@@ -133,6 +133,21 @@ class PlayerViewController: UIViewController {
 
 extension PlayerViewController: ITGOverlayDelegate {
     
+    func overlayRequestedVideoResolution() -> String {
+        if let size = player?.currentItem?.presentationSize {
+            return "\(size)"
+        }
+        return ""
+    }
+    
+    func overlayDidProcessAnalyticEvent(info: AnalyticsInfo, type: AnalyticsEventType) {
+        
+    }
+    
+    func userState(_ user: Inthegametv.User) {
+        
+    }
+    
     func overlayRequestedVideoTime() {
         //overlay may require current video time and state so host application needs to provide it
         guard let player = player else { return }

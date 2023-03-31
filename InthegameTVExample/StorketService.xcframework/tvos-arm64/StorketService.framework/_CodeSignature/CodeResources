@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/StorketService.swiftmodule/Project/arm64-apple-tvos.swiftsourceinfo</key>
 		<data>
-		I5VnmavdGpEVGLqmNVwHyWasiKM=
+		y2FGojyFkW01bG74Um/DfafDC3A=
 		</data>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		DGFQh/43d+MqGos89Actb2ybrIY=
+		Ipbug6QTpUGlEu3tJYUipyoYv1E=
 		</data>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		DxecaursrFLitGg8FCB+gq4LkYc=
+		n5P5YqKVOtCU1wsQif413KtHwCM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,14 +65,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uHNS1Yf4i2zIGonds03kXBr6FWFS89WuHWZov4vLP20=
+			auyGbLpEcuhtv6IPhtjSFkRBNBt7W6hlwSGYasPjsNU=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XfvzKPHgWHgFEDeNh7mkBlF9sl2fTM72Fy9PpOjze6Y=
+			YiLGPJuBUbSRg4O8zy19+O++voYoIDVTvjm4/n0tkKo=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NfyyHReK/tTzjZEwe1BAX66CZNeFqN3IMepbvUohzIQ=
+			RG+kiHOmVPM03bYqzfImvyXCLAG7DQ/yWKBwz9aD2BQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

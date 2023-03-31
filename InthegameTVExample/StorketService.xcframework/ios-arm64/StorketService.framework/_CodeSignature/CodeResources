@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/StorketService.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		PD/9kyRnrECJu5UarVaG3pmyW40=
+		w0VvBu7Gfk9s/J4AUbkYfPuTxJQ=
 		</data>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		DGFQh/43d+MqGos89Actb2ybrIY=
+		Ipbug6QTpUGlEu3tJYUipyoYv1E=
 		</data>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		oX8bg83bZGw7+7uX4COc33Mx8sA=
+		C+tX9pqh/mTwBl4PnHNMgxLTFJc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,14 +65,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ruqKQR9bQsibOUfRZcpCIgpCuxTIjMen/ElnqnkNkgU=
+			KVYikLn9GsTg3VguGFzN00r2KEKFmZXgsc015KRp/Ec=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XfvzKPHgWHgFEDeNh7mkBlF9sl2fTM72Fy9PpOjze6Y=
+			YiLGPJuBUbSRg4O8zy19+O++voYoIDVTvjm4/n0tkKo=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lsbt96/JoI54lNbfYUXIFTkrj06sIo+aZGSOWxheWZE=
+			K+zchEcraC0UVio6hmS9TsQRAx8El0vS+FdzjV5rUHA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

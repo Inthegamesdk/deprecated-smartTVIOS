@@ -4,17 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		Cm2mJknIni1OtskFXd6I0tM/BUY=
-		</data>
 		<key>Assets.car</key>
 		<data>
-		miYFNGyOIMMzFJqSi3xhC3Uu1+c=
+		SiB4qLX6u0blX3eAranLkcYyyr4=
+		</data>
+		<key>DebugView.nib</key>
+		<data>
+		a3Jy4yLBS5FovQoYf0NAefmkH7A=
 		</data>
 		<key>Headers/Inthegametv-Swift.h</key>
 		<data>
-		oERVk16G76Pr0R+NozDieuAieoY=
+		YCrn+nc+wLYV0ZRL8NBJLmn3ueE=
 		</data>
 		<key>Headers/Inthegametv.h</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>ITGAccountView.nib</key>
 		<data>
-		0GvAZUmucEFaa/qPZ77/YGFi65k=
+		lL7+RIrar5JacK4B4JtZNJ13pfE=
 		</data>
 		<key>ITGAnswerView.nib</key>
 		<data>
-		MzpaT7VhYPtvQI5369+c6SYre0Y=
+		S0ohc2nd6aIcWAfBkV5cFCoM890=
 		</data>
 		<key>ITGCheerChatImageCell.nib</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ITGCheerChatsView.nib</key>
 		<data>
-		Pk2ik83XxVZj+tzvo53C+PELQLA=
+		1TBPxdJx9BT9DYPdaKnY4Qa3E1Y=
 		</data>
 		<key>ITGCloseView.nib</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>ITGInfoView.nib</key>
 		<data>
-		/LmGCmIloAiBpVwjwwlBsbnHJ4k=
+		R+t4hKHFBwoEOwE9Lo2/Dle3dfg=
 		</data>
 		<key>ITGLeaderboardCollectionViewCell.nib</key>
 		<data>
-		O5nrQRg215kmifhJrAsIVHV2kA4=
+		v0JefJ9ICTy7jEQYBd0VBH3vJPs=
 		</data>
 		<key>ITGLeaderboardView.nib</key>
 		<data>
-		36G0T/vTcBshorClqHmjghYqvRk=
+		7m82zaiPzpp9Cwx2UnVDdZ9OULo=
 		</data>
 		<key>ITGMenuCollectionViewCell.nib</key>
 		<data>
@@ -74,19 +74,19 @@
 		</data>
 		<key>ITGNotice.nib</key>
 		<data>
-		1asIaFy3cHDNfRwPJeR6jFEmaxU=
+		dIhA6syuJNR/efT0XgG+zDfUH9g=
 		</data>
 		<key>ITGPollView.nib</key>
 		<data>
-		3EGVbzc8kIFCVQfd95+RyvGhqvs=
+		s55/Ubxn7XDcMdgoQvzf8//gVUk=
 		</data>
 		<key>ITGProductView.nib</key>
 		<data>
-		hOTjSMy13MpiUVOaDofThDk4FqU=
+		KkCfBwK3hzSyubIom7Zrr5Cfzq8=
 		</data>
 		<key>ITGQuizView.nib</key>
 		<data>
-		g+GlHWBCY2xafzbwUm2ZyvpvctQ=
+		xkGiqPuc4D0iUrimjqtuBF/KZxw=
 		</data>
 		<key>ITGRatingAnswerView.nib</key>
 		<data>
@@ -94,19 +94,19 @@
 		</data>
 		<key>ITGRatingView.nib</key>
 		<data>
-		tOBU9b6Ld4mvlYe0gfUD4H7w51k=
+		YjBF/EbCZALcDZrAsPyytuv2ieg=
 		</data>
 		<key>ITGShopProductTableViewCell.nib</key>
 		<data>
-		WatWq5d0BTMAdbROwzn+lL3fooo=
+		oqtxtDYFl0w+S7KoM8AY+3FQ+U0=
 		</data>
 		<key>ITGShopView.nib</key>
 		<data>
-		VD4S9+qHJIMExIfZXW/UzZbTqeQ=
+		GwXOnXPAWdgH/5JY8hrgGS17QAo=
 		</data>
 		<key>ITGSideAreaProductView.nib</key>
 		<data>
-		PvXuAcrDib46qnMShvucZv1TBp8=
+		juCQcOlOt9oFVFCTRMF9k1bRofY=
 		</data>
 		<key>ITGSoundsInteractionView.nib</key>
 		<data>
@@ -114,15 +114,15 @@
 		</data>
 		<key>ITGStatsView.nib</key>
 		<data>
-		AgiSXIiKwTZmx4Y4niw/JI5G3lo=
+		tneBXUwSxkdRdhdrWYZDLuGEJN0=
 		</data>
 		<key>ITGUserAreaProductView.nib</key>
 		<data>
-		uTHcIVzGRuCkSUx1ZzoLqeGG8dg=
+		bJCvZFP7CSF0pmHOM5vQ+9FBeTE=
 		</data>
 		<key>ITGWikiView.nib</key>
 		<data>
-		3cMESftqGiGtXVw/RipuHkXUVvw=
+		VlIxdUBpKU5G7J9Bo2C1zg2xoN4=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -130,23 +130,23 @@
 		</data>
 		<key>MainSlipView.nib</key>
 		<data>
-		gskEIUO9Ubzux/ahjQaYZrVVNQA=
+		3Y+b+Mo5pD10aekLwlRIJaPbxfE=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64-apple-tvos-simulator.swiftsourceinfo</key>
 		<data>
-		UtgvtshBB3C28qSCKeaRnZKK45Q=
+		hG8rMZlKUF+0W/ILg4yXnzUQe3s=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
 		<data>
-		LqN5ozXgqOjtJzqvUr3cAhCcEsg=
+		L1lVk2e1n6tmW61XvnoFTOs5Byw=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		UKBFoYO10hTGGscKVmIjb1MwsPE=
+		jM9Ls+sKLE8l7HD4sdPev5MV0T0=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		hrf4eOE6J4qfwrpRULd7sBLKYAI=
+		JxV05LLHR2MF5lIq1kBqjv8W0lg=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -154,19 +154,19 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		hrf4eOE6J4qfwrpRULd7sBLKYAI=
+		JxV05LLHR2MF5lIq1kBqjv8W0lg=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		3Mgzxypiir+gnhz1vLwEAEcowIQ=
+		JQNnJqJ269yy0laNEP9Og3P/TXU=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		UKBFoYO10hTGGscKVmIjb1MwsPE=
+		jM9Ls+sKLE8l7HD4sdPev5MV0T0=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		w+nMkUjy69K5IgBKi3p+ha9N6O8=
+		sNlGrqe8IsDZSHDqcaY/uQvdfas=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
@@ -174,11 +174,11 @@
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		w+nMkUjy69K5IgBKi3p+ha9N6O8=
+		sNlGrqe8IsDZSHDqcaY/uQvdfas=
 		</data>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		9vZLgvnsqtJ01Ek8cjWA9FUxxxU=
+		KMnZptfGRpB/RMht9Fp/iz+QmXY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -223,14 +223,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BdEU7GeWHJIOOw/jfV/HhAb04MbIhaEi31ML2SDKknQ=
+			W0ukVnBeTsfAe2UNkbbYegxoiCzAjjZU36SkBQBNcYw=
+			</data>
+		</dict>
+		<key>DebugView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Zt+3yJnCZ1m2t4ACARi0WdgF3JGGqOGG7F8lxkUmPXs=
 			</data>
 		</dict>
 		<key>Headers/Inthegametv-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wju6d0Vx+3b5kUZUZ1yFCyLAh8D4lG3orTFJm43nGQA=
+			dd6GejOLJZSDfxHN5WwNR73Tt8aWsjmxwAJJJccjHso=
 			</data>
 		</dict>
 		<key>Headers/Inthegametv.h</key>
@@ -251,14 +258,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j2SGZ/MnjNMoiy67USylQAWdwmccAzcFLLhBASOyiHk=
+			tVjLDcw6kp83d4itFCuWQMyTou6TmOnAHXV7ci+00kI=
 			</data>
 		</dict>
 		<key>ITGAnswerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V13w3FXUPGLBzzQ6gEWQ9Ed7fML/BcFrkIKf9LgNqYE=
+			0xj86pZ1yGPoR83hSPthiTpC/BVRkjU3dYgHKEz+0ZE=
 			</data>
 		</dict>
 		<key>ITGCheerChatImageCell.nib</key>
@@ -279,7 +286,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NaEUVRj9IrBsQYIJ0JBy9yGjJCBLTc0dkhDF11n/1ow=
+			I8v0+/7ech8rCqcLJlypgoV1cHlZ3OdSRo9L+fGghpY=
 			</data>
 		</dict>
 		<key>ITGCloseView.nib</key>
@@ -300,21 +307,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VvKJFbGTKYTE1pzx/tmx2lzr4NE3p9QNLNdh9c42GBA=
+			m/9fswL9W6PPTLh7Ey1n6n+uNJd/E97hxxXEosn0aVI=
 			</data>
 		</dict>
 		<key>ITGLeaderboardCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fKntfyEI+cvlNO7XCOpuBpAfP5GJtOKn5YHXgeKTtS8=
+			C3+JZMYo1kq7jbfYm0SoSdIdytwy5uWlkX04nVMeUHw=
 			</data>
 		</dict>
 		<key>ITGLeaderboardView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iRgBbpOyeJ0urw52TYoCdPfthtM0pGgeYCMi8pN2zfQ=
+			vQCdhgZYtt9/DTlWt2yFV5HatPVnIp06LxRq6SEccnQ=
 			</data>
 		</dict>
 		<key>ITGMenuCollectionViewCell.nib</key>
@@ -335,28 +342,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1vDX1oLePoZl+ec/OWBOaqzwZGHWBUFywGGvwiLeJ1I=
+			2y4axW3SYJ+QbWx6gZhfSFNTud8IBp3suT5Bl7AD3u4=
 			</data>
 		</dict>
 		<key>ITGPollView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b4aUO0mZmT9BABKFs6iGeQrS3yjcWkvOMjwVxPxxl0U=
+			65X3DnEpX3FeOSaoorgOJB2gKxTDe0rO9gwVNonqlzM=
 			</data>
 		</dict>
 		<key>ITGProductView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sI37eU2WTlg0qUovnTxQq0SEO4Wm6zMWKqpnPT0wYAQ=
+			NBIhE343065ltvVR5I353DnOJmyD7rh51F4TJrkkbGg=
 			</data>
 		</dict>
 		<key>ITGQuizView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eAzJBlk4NhqGD69vxyCq2ZHKtTKTQHkrfSOTEHwfM0Q=
+			i7dyeYvE9F32lLYnu1VFe9mrZi9wplfDF0Yb04ihAZA=
 			</data>
 		</dict>
 		<key>ITGRatingAnswerView.nib</key>
@@ -370,28 +377,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eRLgy9HZ8x7vU+d+nFo6X2u20hesSgSrKf7yGN9PCuc=
+			s154o4CK6lOz/vmBkyWXsGk/1VIgLMRiWHqCYE87688=
 			</data>
 		</dict>
 		<key>ITGShopProductTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NzuSYDOFVt6dUdCjtK1/YPTgKdWDzNxLjShQ+fqpHno=
+			VCBUoDfGwSqjZ30oRgYZguxSaBNM+uwhC8DqCdDWLNc=
 			</data>
 		</dict>
 		<key>ITGShopView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KPuMNplk054itG02dbvZzUqPyYg4IHl5RkO/xPNUJH0=
+			WZlpJKwDP6arxCcjvZveocwPzmH6Baz8ahDLC5Gppp4=
 			</data>
 		</dict>
 		<key>ITGSideAreaProductView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wTbVZG638Nf7tQqCg1HyhgmrR7T/6LUrJJT36rFZ9zo=
+			2faUh2RrEdig8IIXJZ8OC2tGX0fUufj+j8/k7Z2g6mw=
 			</data>
 		</dict>
 		<key>ITGSoundsInteractionView.nib</key>
@@ -405,56 +412,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SbjtqxY5Jdg4aglJHkwRvZ7aPouMr4q9jUungPImZw4=
+			WXgusGVC/IWl7hv4N+P6hjyMUFreCsOPmaJXTyxb7D4=
 			</data>
 		</dict>
 		<key>ITGUserAreaProductView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bkgCOt0Ppp7MP6jrG9f7Bhc9nsz2BavogYpnwjg44Oc=
+			BmP5p1fC4EX3Tx9u+5clj927h2kEiOhofUXDOUzEfq8=
 			</data>
 		</dict>
 		<key>ITGWikiView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QOpfnm8BiUm7TM8iq+H8fevjxiiSBUlTfF7wQCtoky0=
+			0VM/V/ebuJcJH6jXJyzgrdpIw9/S85ZE310+4+SxU00=
 			</data>
 		</dict>
 		<key>MainSlipView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zkLhxmwK/QljxO56U/QOu5iALwlY4mDGjXq+Keaox54=
+			EcjzbL1Bjzhh0j0qpSX3u5MPU3krVzLMZe77VZAaFkA=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/arm64-apple-tvos-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mqVGZR8pY+DcbKQnYCEriLOP5MkzfNvSH0Pqr9viBds=
+			LqpDG3nyiZF4kJZz+4rBgt/cYrVKTeiHpIthyfPVkdU=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/Project/x86_64-apple-tvos-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v54MC+w+/95aOahomWUXabb4vobpXTrQFjHRJRfOUp0=
+			S+o/EOrFsc4A9mu7TU5gEeE8eJY3KM01xv3U3Uw/PLI=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5f0q5sfcyxVhn4oFeTKSDJ7jg9+6blqK5X5w9l+Civk=
+			YQbqjiHEXU9cLbpUzsTCs+2EZvgDiva6HUkwDiADp5M=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p4E4bZBcVTFapfOFDYhZFLhMr2udAAbM5KN9nI58K04=
+			m7NwIF4rGvQyGHn7mewe9MLekYxXxNdi4bdVeGCGqKE=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
@@ -468,28 +475,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p4E4bZBcVTFapfOFDYhZFLhMr2udAAbM5KN9nI58K04=
+			m7NwIF4rGvQyGHn7mewe9MLekYxXxNdi4bdVeGCGqKE=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HrRkY53hBOdJqPN/21iefUvjXh0/XduuH0JL7SKjlSc=
+			IQC1pY+fcq1zmkWdtV1H/+CZfV1bjm/QIqJfPHuansA=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5f0q5sfcyxVhn4oFeTKSDJ7jg9+6blqK5X5w9l+Civk=
+			YQbqjiHEXU9cLbpUzsTCs+2EZvgDiva6HUkwDiADp5M=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KrCJ0RLLto7RI2XFDKD+MJvnCsWFnhECr+L44m1EyRQ=
+			uq+taZkq9aN1VgTj5eF15br1C6nuElMjkbu6JO5zaqo=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
@@ -503,14 +510,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KrCJ0RLLto7RI2XFDKD+MJvnCsWFnhECr+L44m1EyRQ=
+			uq+taZkq9aN1VgTj5eF15br1C6nuElMjkbu6JO5zaqo=
 			</data>
 		</dict>
 		<key>Modules/Inthegametv.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5w4+ZP+lv2lqKP5I9sDtViR3Twwgf9MdXDxsFDBEduY=
+			3q79jq4aTF2xWSoGoJfpfikMZ/daepwIKUrudR9o15s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
