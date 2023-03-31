@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		11DC0D0729D706CD00A9A18A /* Inthegametv.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ECC5C529D6FD8000254A9B /* Inthegametv.xcframework */; };
-		11DC0D0829D706CD00A9A18A /* Inthegametv.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11ECC5C529D6FD8000254A9B /* Inthegametv.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		11DC0D0829D706CD00A9A18A /* Inthegametv.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11ECC5C529D6FD8000254A9B /* Inthegametv.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		11DC0D0929D706CF00A9A18A /* StorketService.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ECC5C429D6FD7F00254A9B /* StorketService.xcframework */; };
-		11DC0D0A29D706CF00A9A18A /* StorketService.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11ECC5C429D6FD7F00254A9B /* StorketService.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		11DC0D0A29D706CF00A9A18A /* StorketService.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11ECC5C429D6FD7F00254A9B /* StorketService.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6D85B1E725E6BC4D00C248DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D85B1E625E6BC4D00C248DB /* AppDelegate.swift */; };
 		6D85B1EC25E6BC4D00C248DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D85B1EA25E6BC4D00C248DB /* Main.storyboard */; };
 		6D85B1EE25E6BC4F00C248DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D85B1ED25E6BC4F00C248DB /* Assets.xcassets */; };
