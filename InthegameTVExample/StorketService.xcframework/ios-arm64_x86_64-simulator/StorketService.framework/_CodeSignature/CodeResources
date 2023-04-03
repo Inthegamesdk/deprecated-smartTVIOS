@@ -10,59 +10,59 @@
 		</data>
 		<key>Headers/StorketService-Swift.h</key>
 		<data>
-		xDPHff1OkvxN8CZzKHOi7evGo40=
+		Tc9DdsaEOly7O7Mok3qr5P4HPxk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pxdhG9UQAwu/K8WIrKQSCFMDO/A=
+		G92le7ppSVffxblRCIzlg9peMfU=
 		</data>
 		<key>Modules/StorketService.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		fv+u7/OPFzhyp5GfaG8e5qY+5tU=
+		SMe5KXJ6zQiHv0RASWcP5Eo6j3I=
 		</data>
 		<key>Modules/StorketService.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		INQbDykt4vcEPpnuuCESu6tyBDc=
+		6TAj0pxn1WCJVsa72GRcG0N9Z2I=
 		</data>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ipbug6QTpUGlEu3tJYUipyoYv1E=
+		G+koj6qYIDecbo4uZ4WkFZYjyps=
 		</data>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9U1HmuBV4UGjOtTmKVlsHn3Gu7U=
+		qyeclwCKylOzTQDfSQ2WF89lTAo=
 		</data>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		lDTFEGvXrP90Aa1SJos5evF093g=
+		PcNG1fOwIdxHC1Ap4pEbfPdzfHI=
 		</data>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9U1HmuBV4UGjOtTmKVlsHn3Gu7U=
+		qyeclwCKylOzTQDfSQ2WF89lTAo=
 		</data>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		o1dXvGi9ZCN3ppr02xqXsxK6Pgg=
+		qLbF+wxoIQA6VNjCHBwZHLMFmh8=
 		</data>
 		<key>Modules/StorketService.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Ipbug6QTpUGlEu3tJYUipyoYv1E=
+		G+koj6qYIDecbo4uZ4WkFZYjyps=
 		</data>
 		<key>Modules/StorketService.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		mpOr3QkYpSgtkCsqcB6UWJz7oBg=
+		z9h8+oq3mVVyDuGtPwp1d76Nrcw=
 		</data>
 		<key>Modules/StorketService.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		KfvHR3RwSvKCjqJjoTvJNFYJeTk=
+		uo5qtzxoGtCEi3lxWKdIjUOUn0I=
 		</data>
 		<key>Modules/StorketService.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mpOr3QkYpSgtkCsqcB6UWJz7oBg=
+		z9h8+oq3mVVyDuGtPwp1d76Nrcw=
 		</data>
 		<key>Modules/StorketService.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6kgZIotyxGQS0n8h4eaDWy/knRo=
+		cQPk7F6Tzq28hU0fb02swnYUsYE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,91 +82,91 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aEvD+HUKPHutyokk4Dj+r5SKHRjrG3CFVzMT5fdtH2Q=
+			hxaIBGogGVQ5FsSDk4unlLc6BXomyTq4QHKcaAYWqkM=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xnNPkGQClUICZNrFRBV4gHNbI3lvRcy4CeBi2eyZjqw=
+			PwBo91fEDiwJl8Kx2un10lt0qNf+2HqYCmwGhIYIIgo=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rfsZwt6sxY3zbpkBHLkkQ4J6WTKMoAUm9YzcYWYYA0Q=
+			w9oVfC/lobVmxrTd6GK6GZPJys0JsDnwrnPMMXy0/To=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YiLGPJuBUbSRg4O8zy19+O++voYoIDVTvjm4/n0tkKo=
+			Aog9vHnWKNTkXW+DHnVR1rIDvnihtvdNqWPXLkvyMk0=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JZ1IeppL9B4ZBv3e4aJDxjgCZ9vL/bLmCuSZkAdzuWM=
+			MOOVIR2aHs//BDg0soMVH9lY81hVZffxp7N88IDd6OY=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0bsfNowOesCqfKOgY3c5m1G3rNJ+ydyyiwnGZInnyYQ=
+			2FUmVn4grc4mdpYEaMZ63JbfrxGSL2om84FfGF3ehnI=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JZ1IeppL9B4ZBv3e4aJDxjgCZ9vL/bLmCuSZkAdzuWM=
+			MOOVIR2aHs//BDg0soMVH9lY81hVZffxp7N88IDd6OY=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7eKcNmErYNnJv48GAuEazHK0s3uln+hnnX2byTEFD6A=
+			6JEOdLozovHsMy0nTrLpDHX51u0pda8IQrNzKUulSEg=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YiLGPJuBUbSRg4O8zy19+O++voYoIDVTvjm4/n0tkKo=
+			Aog9vHnWKNTkXW+DHnVR1rIDvnihtvdNqWPXLkvyMk0=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dx0FEEt552/evgprO6oMjGxzTI4M3quvXAePsBxQcXA=
+			cg/lq9o4jR+t7EVQfeUZJWaf41U8hRrZGcMJm3jRIh0=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/R0x9X7THX2XIPO9/9zGwCG6GzXLsGggLC44wbjrZjI=
+			CcXvybehYMZlxbut4MsDUa38X/mXLu2Nj4IJWJhG/sk=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dx0FEEt552/evgprO6oMjGxzTI4M3quvXAePsBxQcXA=
+			cg/lq9o4jR+t7EVQfeUZJWaf41U8hRrZGcMJm3jRIh0=
 			</data>
 		</dict>
 		<key>Modules/StorketService.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lckgryFOl8MXynmrL3XYMigNizbTgbpIzSwSkLkMqxQ=
+			uWfKDWmLXyrHISvl2/D6Ce23ztXImlSqRCZgEdPfNt0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-tvos14.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Inthegametv
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -55,8 +55,8 @@ public struct User : Swift.Codable {
   public let createdAt: Foundation.Date
   public let language: Swift.String
   public let foreignId: Swift.String?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct UserChannelPoints : Swift.Codable {
   public let channelSlug: Swift.String
@@ -66,8 +66,8 @@ public struct UserChannelPoints : Swift.Codable {
   public var expoints: Swift.Int {
     get
   }
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct UserActivity : Swift.Codable {
   public let activityId: Swift.String
@@ -78,8 +78,8 @@ public struct UserActivity : Swift.Codable {
   public let expoints: Swift.Int
   public let isCorrect: Swift.Bool?
   public let correctAnswer: Swift.String?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum ChannelDirection : Swift.String, Swift.Codable {
   case ltr
@@ -128,12 +128,23 @@ public struct UserPermissions : Swift.Codable {
   public let quiz: Swift.Bool
   public let poll: Swift.Bool
   public let wiki: Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct LeaderboardResponse : Swift.Codable {
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public var all: [Inthegametv.LeaderboardItem]
+  public var myself: Inthegametv.LeaderboardItem?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LeaderboardItem : Swift.Codable {
+  public let rankingPosition: Swift.Int
+  public let userName: Swift.String
+  public let thumbnail: Swift.String?
+  public let totalCoins: Swift.Int?
+  public let totalExpoints: Swift.Int?
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public enum LeaderboardSorting : Swift.String, Swift.Decodable {
   case expoints
@@ -208,7 +219,7 @@ public enum ITGContent {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) weak public var delegate: Inthegametv.ITGOverlayDelegate?
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any Inthegametv.ITGOverlayDelegate)?
   @_Concurrency.MainActor(unsafe) public var blockMenu: Swift.Bool
   @_Concurrency.MainActor(unsafe) public var blockNotifications: Swift.Bool
   @_Concurrency.MainActor(unsafe) public var blockSlip: Swift.Bool
@@ -228,7 +239,7 @@ public enum ITGContent {
   @_Concurrency.MainActor(unsafe) public var direction: Inthegametv.ChannelDirection? {
     get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredFocusEnvironments: [UIKit.UIFocusEnvironment] {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredFocusEnvironments: [any UIKit.UIFocusEnvironment] {
     @objc get
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
@@ -236,9 +247,9 @@ public enum ITGContent {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func didUpdateFocus(in context: UIKit.UIFocusUpdateContext, with coordinator: UIKit.UIFocusAnimationCoordinator)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
-  @_Concurrency.MainActor(unsafe) public func load(accountId: Swift.String, environment: Inthegametv.ITGEnvironment, delegate: Inthegametv.ITGOverlayDelegate?, foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil)
-  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, accountId: Swift.String, environment: Inthegametv.ITGEnvironment, delegate: Inthegametv.ITGOverlayDelegate?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil)
-  @_Concurrency.MainActor(unsafe) public func getLeaderboard(_ page: Swift.Int, limit: Swift.Int, period: Inthegametv.LeaderboardPeriod, leaderboardSorting: Inthegametv.LeaderboardSorting, completion: @escaping (Inthegametv.LeaderboardResponse?, Swift.Error?) -> ())
+  @_Concurrency.MainActor(unsafe) public func load(accountId: Swift.String, environment: Inthegametv.ITGEnvironment, delegate: (any Inthegametv.ITGOverlayDelegate)?, foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) public func load(channelSlug: Swift.String, accountId: Swift.String, environment: Inthegametv.ITGEnvironment, delegate: (any Inthegametv.ITGOverlayDelegate)?, language: Swift.String = "en", foreignId: Swift.String? = nil, userName: Swift.String? = nil, userAvatar: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) public func getLeaderboard(_ page: Swift.Int, limit: Swift.Int, period: Inthegametv.LeaderboardPeriod, leaderboardSorting: Inthegametv.LeaderboardSorting, completion: @escaping (Inthegametv.LeaderboardResponse?, (any Swift.Error)?) -> ())
   @_Concurrency.MainActor(unsafe) public func resetUser()
   @_Concurrency.MainActor(unsafe) public func closeInteractionIfNeeded() -> Swift.Bool
   @_Concurrency.MainActor(unsafe) public func isDisplayingInteraction() -> Swift.Bool
@@ -270,7 +281,7 @@ extension Inthegametv.ITGOverlayView {
   @_Concurrency.MainActor(unsafe) public func menuShouldClose()
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ITGInfoView : UIKit.UIView, Inthegametv.NibView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredFocusEnvironments: [UIKit.UIFocusEnvironment] {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredFocusEnvironments: [any UIKit.UIFocusEnvironment] {
     @objc get
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func removeFromSuperview()
@@ -321,8 +332,11 @@ public enum LeaderboardPeriod : Swift.String, Swift.CustomStringConvertible, Swi
     get
   }
 }
+extension Inthegametv.LeaderboardItem : Swift.Equatable {
+  public static func == (lhs: Inthegametv.LeaderboardItem, rhs: Inthegametv.LeaderboardItem) -> Swift.Bool
+}
 @_hasMissingDesignatedInitializers public class ITGTool {
-  public static func getVideoURL(channelSlug: Swift.String, accountId: Swift.String, language: Swift.String, environment: Inthegametv.ITGEnvironment, completion: @escaping (Swift.String?, Swift.Error?) -> ())
+  public static func getVideoURL(channelSlug: Swift.String, accountId: Swift.String, language: Swift.String, environment: Inthegametv.ITGEnvironment, completion: @escaping (Swift.String?, (any Swift.Error)?) -> ())
   @objc deinit
 }
 public struct ITGEnvironment {
